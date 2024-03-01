@@ -10,7 +10,7 @@
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: monospace;
 	background-color: #0f0f0f;
 	box-sizing: border-box;
 	overflow: auto; 
@@ -57,7 +57,7 @@ i {
 	width: 250px;
 	padding: 10px;
 	float: left;
-	height: 97.97vh; /* ---------unscrollable-lazyfix-----------*/
+	height: 100vh; /* ---------unscrollable-lazyfix-----------*/
 	overflow-x: hidden;
 	position: relative;
 	padding-right: 0px;
@@ -161,14 +161,26 @@ i {
 .main-content {
     margin-left: 250px;
     height: 100vh;
-	margin-top: 0;
-	color: #fff;
+    margin-top: 0;
+    color: #fff;
+    overflow: auto; 
+    display: flex; 
+    flex-direction: column; 
 }
 
 
+#runcode {
+    flex-grow: 1; 
+    position: relative; 
+}
+
 #runcode iframe {
-    width: 1660px;
-    height: 97.97vh; /* ---------unscrollable-lazyfix-pt2-----------*/
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border: none; 
 }
 
 /* --------------------site-info----------------------*/
@@ -213,3 +225,4 @@ i {
 	 align-items: center;
 	 height: 100vh;
 }
+

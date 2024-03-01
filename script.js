@@ -17,9 +17,7 @@ $(".selector-active").css({
 
 // ---------seamless switch page function-----------
 
-
 $(document).ready(function() {
-    // Initialize active item's width and position
     var activeItemVerticalInner = $('#accordian ul li.active');
     var activeWidthVerticalHeight = activeItemVerticalInner.innerHeight();
     var activeWidthVerticalWidth = activeItemVerticalInner.innerWidth();
@@ -32,10 +30,8 @@ $(document).ready(function() {
         "width": activeWidthVerticalWidth + "px"
     });
 
-    // Show the info section by default
     $('#info').show();
 
-    // Vertical menu with inner menu active animation
     $("#accordian").on("click", "li", function(e) {
         $('#accordian ul li').removeClass("active");
         $(this).addClass('active');
@@ -49,47 +45,28 @@ $(document).ready(function() {
             "height": activeWidthVerticalHeight + "px",
             "width": activeWidthVerticalWidth + "px"
         });
-
-        // Check which menu item is clicked and show/hide respective sections
-        if ($(this).find('a span').text() === 'Topics') {
-            $('#topics').show(); // Show the topics section
-            $('#info, #tasks, #runcode, #generator, #credits').hide(); // Hide other sections
+        if ($(this).find('a span').text() === 'Java Guide') {
+            $('#topics').fadeIn(500);
+            $('#tasks, #runcode, #generator, #credits, #info').fadeOut(250);
         } else if ($(this).find('a span').text() === 'Site Info') {
-            $('#info').show(); // Show the info section
-            $('#topics, #tasks, #runcode, #generator, #credits').hide(); // Hide other sections
+            $('#info').fadeIn(500); 
+            $('#topics, #tasks, #runcode, #generator, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Tasks') {
-            $('#tasks').show(); // Show the tasks section
-            $('#info, #topics, #runcode, #generator, #credits').hide(); // Hide other sections
+            $('#tasks').fadeIn(500); 
+            $('#info, #topics, #runcode, #generator, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Run Code Online') {
-            $('#runcode').show(); // Show the runcode section
-            $('#info, #topics, #tasks, #generator, #credits').hide(); // Hide other sections
+            $('#runcode').fadeIn(500); 
+            $('#info, #topics, #tasks, #generator, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Koshka Generator') {
-            $('#generator').show(); // Show the generator section
-            $('#info, #topics, #tasks, #runcode, #credits').hide(); // Hide other sections
+            $('#generator').fadeIn(500); 
+            $('#info, #topics, #tasks, #runcode, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Credits') {
-            $('#credits').show(); // Show the credits section
-            $('#info, #topics, #tasks, #runcode, #generator').hide(); // Hide other sections
+            $('#credits').fadeIn(500);
+            $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
         }
     });
 });
 
-
-// --------------add active class-on another-page move----------
-
-jQuery(document).ready(function($){
-  // Get current path and find target link
-  var path = window.location.pathname.split("/").pop();
-
-  // Account for home page with empty path
-  if ( path == '' ) {
-    path = 'index.html';
-  }
-
-  var target = $('#accordian ul li a[href="'+path+'"]');
-  // Add active class to target link
-  target.parent().addClass('active');
-});
-
-// ------------------site-info---------------------------
+// ------------------topics-here---------------------------
 
 
