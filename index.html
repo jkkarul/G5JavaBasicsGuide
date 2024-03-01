@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>G5RSCH | Java Basics Guide</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <script src="https://kit.fontawesome.com/3ea5ea8213.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+   </head>
+
+   <!---------------------- sidebar ---------------------->
+
+   <body>
+      <div id="accordian">
+         <div class="profile">
+            <div class="profile-img bg-img" style="background-image: url(img/java.png)"></div>
+         </div>
+         <ul class="show-dropdown main-navbar">
+            <div class="selector-active">
+               <div class="top"></div>
+               <div class="bottom"></div>
+            </div>
+            <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span>Site Info</span></a></li>
+            <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Topics</span></a></li>
+            <li><a href="javascript:void(0);"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a></li>
+            <li><a href="javascript:void(0);"><i class="fa-solid fa-laptop-code"></i><span>Run Code Online</span></a></li>
+            <li><a href="javascript:void(0);"><i class="fa-regular fa-eye"></i><span>Koshka Generator</span></a></li>
+            <li><a href="javascript:void(0);"><i class="fa-solid fa-people-group"></i><span>Credits</span></a></li>
+            
+         </ul>
+      </div>
+
+      <!---------------------- main-content ---------------------->
+
+     <div class="main-content">
+
+        <div id="info" style="display: none;">
+         <div class="info-wrapper">
+            <div class="about-info">
+               <p>
+              Java Basics Guide by: G5
+               </p>
+            </div>
+            </div>
+        </div>
+        
+        <div id="topics" style="display: none;">
+         <div class="topic-wrapper">
+            <p> Topics </p>
+         </div>
+        </div>
+        
+        <div id="tasks" style="display: none;">
+            <div class=""></div>
+            <h4>tasks</h4>
+        </div>
+        
+        <div id="runcode" style="display: none;">
+            <iframe src="https://www.online-java.com/" title="Embedded Page" style="border: none;" scrolling="no"></iframe>
+        </div>
+        
+        <div id="generator" style="display: none;">
+            <h4>generator</h4>
+        </div>
+        
+        <div id="credits" style="display: none;">
+            <h4>credits</h4>
+        </div>
+     </div>
+
+         <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+         <script src="./script.js"></script>
+   </body>
+</html>
