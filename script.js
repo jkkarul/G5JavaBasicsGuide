@@ -1,4 +1,4 @@
-// ---------vertical-menu with-inner-menu-active-animation-----------
+// --------- vertical-menu-with-inner-menu-active-animation -----------
 
 var tabsVerticalInner = $('#accordian');
 var selectorVerticalInner = $('#accordian').find('li').length;
@@ -14,8 +14,7 @@ $(".selector-active").css({
 	"width": activeWidthVerticalWidth + "px"
 });
 
-
-// ---------seamless switch page function-----------
+// --------- seamless-switch-page-function -----------
 
 $(document).ready(function() {
     var activeItemVerticalInner = $('#accordian ul li.active');
@@ -66,7 +65,4 @@ $(document).ready(function() {
         }
     });
 });
-
-// ------------------topics-here---------------------------
-
 
