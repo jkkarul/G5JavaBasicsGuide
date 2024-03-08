@@ -220,6 +220,7 @@ i {
 	font-family: monospace;
 	font-size: 52px;
 	text-align: center;
+	cursor: default;
   }
 
   
@@ -263,6 +264,7 @@ main.table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+	cursor: default;
 }
 
 .table__body {

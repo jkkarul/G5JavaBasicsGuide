@@ -220,6 +220,7 @@ i {
 	font-family: monospace;
 	font-size: 52px;
 	text-align: center;
+	cursor: default;
   }
 
   
@@ -300,6 +301,7 @@ th, td {
     text-align: center; 
     width: 29%; 
 	margin: -30px;
+	cursor: default;
 }
 
 .table__body::-webkit-scrollbar{
@@ -317,6 +319,17 @@ th, td {
     visibility: visible;
 }
 
+.clickable-row {
+	cursor: pointer;
+}
+
+.clickable-row:hover {
+	background-color: #0005;
+}
+
+thead > tr > th {
+	cursor: default;
+}
 /* -------------------- tasks ----------------------*/
 
 .tasks-wrapper {
