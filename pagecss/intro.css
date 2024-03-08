@@ -212,8 +212,8 @@ i {
   }
   
   .about-info {
-	width: 24ch;
-	animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+	width: 21ch;
+	animation: typing 1.5s steps(21), blink .5s step-end infinite alternate;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 3px solid;
@@ -298,8 +298,16 @@ th, td {
     padding: 0;
     font-size: 27px; 
     text-align: center; 
-    width: 29%; 
+    width: 58.2%; 
 	margin: -30px;
+}
+
+#topic2 {
+    width: 51.6%;
+}
+
+#topic3 {
+    width: 52.6%;
 }
 
 .table__body::-webkit-scrollbar{

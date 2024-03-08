@@ -44,22 +44,22 @@ $(document).ready(function() {
             "height": activeWidthVerticalHeight + "px",
             "width": activeWidthVerticalWidth + "px"
         });
-        if ($(this).find('a span').text() === 'Java Guide') {
+        if ($(this).find('a span').text() === 'No. 1') {
             $('#topics').fadeIn(500);
             $('#tasks, #runcode, #generator, #credits, #info').fadeOut(250);
-        } else if ($(this).find('a span').text() === 'Site Info') {
+        } else if ($(this).find('a span').text() === 'Topic:') {
             $('#info').fadeIn(500); 
             $('#topics, #tasks, #runcode, #generator, #credits').fadeOut(250); 
-        } else if ($(this).find('a span').text() === 'Tasks') {
+        } else if ($(this).find('a span').text() === 'No. 2') {
             $('#tasks').fadeIn(500); 
             $('#info, #topics, #runcode, #generator, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Run Java Code') {
             $('#runcode').fadeIn(500); 
             $('#info, #topics, #tasks, #generator, #credits').fadeOut(250); 
-        } else if ($(this).find('a span').text() === 'Koshka Generator') {
+        } else if ($(this).find('a span').text() === 'No. 3') {
             $('#generator').fadeIn(500); 
             $('#info, #topics, #tasks, #runcode, #credits').fadeOut(250); 
-        } else if ($(this).find('a span').text() === 'Credits') {
+        } else if ($(this).find('a span').text() === 'Back') {
             $('#credits').fadeIn(500);
             $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
         }
