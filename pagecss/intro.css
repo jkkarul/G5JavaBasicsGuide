@@ -210,6 +210,10 @@ i {
 	display: grid;
 	place-items: center;
   }
+
+  p > i {
+	font-size: 65px;
+  }
   
   .about-info {
 	width: 21ch;
@@ -218,7 +222,7 @@ i {
 	overflow: hidden;
 	border-right: 3px solid;
 	font-family: monospace;
-	font-size: 52px;
+	font-size: 75px;
 	text-align: center;
 	cursor: default;
   }

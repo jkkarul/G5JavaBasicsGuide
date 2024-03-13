@@ -1,140 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>G5RSCH | Java Basics Guide</title>
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <script src="https://kit.fontawesome.com/3ea5ea8213.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="./style.css">
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-   </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>G5RSCH | Java Basics Guide</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/3ea5ea8213.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
 
-   <body>
+    <!---------------------- sidebar ---------------------->
+    <div id="accordian">
+      <div class="profile">
+        <div class="profile-img bg-img" style="background-image: url(img/java.png)"></div>
+      </div>
+      <ul class="show-dropdown main-navbar">
+        <div class="selector-active">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+        <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span>Site Info</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Java Guide</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-laptop-code"></i><span>Run Java Code</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa-regular fa-eye"></i><span>Koshka Generator</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-people-group"></i><span>Credits</span></a></li>
+      </ul>
+    </div>
 
-      <!---------------------- sidebar ---------------------->
-
-      <div id="accordian">
-         <div class="profile">
-            <div class="profile-img bg-img" style="background-image: url(img/java.png)"></div>
+    <!---------------------- site-info ---------------------->
+    <div class="main-content">
+      <div id="info" style="display: none;">
+        <div class="info-wrapper">
+         <div class="infotext-wrapper"> 
+          <div class="about-info">
+            <p>
+               <i class="fa-brands fa-java"></i> Java Basics Guide by: G5 
+            </p>
+          </div>
          </div>
-         <ul class="show-dropdown main-navbar">
-            <div class="selector-active">
-               <div class="top"></div>
-               <div class="bottom"></div>
-            </div>
-            <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span>Site Info</span></a></li>
-            <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Java Guide</span></a></li>
-            <li><a href="javascript:void(0);"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a></li>
-            <li><a href="javascript:void(0);"><i class="fa-solid fa-laptop-code"></i><span>Run Java Code</span></a></li>
-            <li><a href="javascript:void(0);"><i class="fa-regular fa-eye"></i><span>Koshka Generator</span></a></li>
-            <li><a href="javascript:void(0);"><i class="fa-solid fa-people-group"></i><span>Credits</span></a></li>
-            
-         </ul>
+        </div>
       </div>
 
-      <!---------------------- site-info ---------------------->
-
-     <div class="main-content">
-
-        <div id="info" style="display: none;">
-         <div class="info-wrapper">
-            <div class="about-info">
-               <p>
-              Java Basics Guide by: G5
-               </p>
-            </div>
-            </div>
-        </div>
-        
-        <!---------------------- topics-here ---------------------->
-
-        <div id="topics" style="display: none;">
-         <div id="topic-wrapper">
-            <main class="table">
-               <section class="table__header">
-                  <h1><i class="fa-solid fa-code"></i>Java Basics Guide: </h1>
-               </section>
-               <section class="table__body">
-                  <table>
-                      <thead>
-                          <tr>
-                              <th> </th>
-                              <th> # </th>
-                              <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
-                              <th> Description </th>
-                          </tr>
-                      </thead>
-                      <tbody class="clickable-row" data-href="pages/intro.html">
-                        <tr> 
-                           <td></td>
-                            <td> 1 </td>
-                            <td> Introduction to Programming </td>
-                            <td> An introduction on programs and programming </td>
-                        </tr>
-                        <tr> 
-                           <td></td>
-                           <td> 2 </td>
-                           <td> Introduction to Java </td>
-                           <td> An introduction on the Java programming language. </td>
-                       </tr>
-                       <tr>
-                        <td></td>
-                        <td> 3 </td>
-                        <td> Installing Java / JDK </td>
-                        <td> A step-by-step guide on how to install Java on your device. </td>
-                    </tr>
-                  </tbody>
-                    <thead>
-                     <tr>
-                         <th> </th>
-                         <th> # </th>
-                         <th> Topic: Print Function <i class="fa-solid fa-print"></i> </th>
-                         <th> Description </th>
-                     </tr>
-                 </thead>
-                 <tbody class="clickable-row" data-href="pages/print.html">
+      <!---------------------- topics-here ---------------------->
+      <div id="topics" style="display: none;">
+        <div id="topic-wrapper">
+          <main class="table">
+            <section class="table__header">
+              <h1><i class="fa-brands fa-java"></i>Java Basics Guide: </h1>
+            </section>
+            <section class="table__body">
+              <table>
+                <thead>
+                  <tr>
+                    <th> </th>
+                    <th> # </th>
+                    <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
+                    <th> Description </th>
+                  </tr>
+                </thead>
+                <tbody class="clickable-row" data-href="pages/intro.html">
+                  <tr>
+                    <td></td>
+                    <td> 1 </td>
+                    <td> Introduction to Programming </td>
+                    <td> An introduction on programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 2 </td>
+                    <td> Introduction to Java </td>
+                    <td> An introduction on the Java programming language. </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 3 </td>
+                    <td> Installing Java / JDK </td>
+                    <td> A step-by-step guide on how to install Java on your device. </td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th> </th>
+                    <th> # </th>
+                    <th> Topic: Print Function <i class="fa-solid fa-print"></i> </th>
+                    <th> Description </th>
+                  </tr>
+                </thead>
+                <tbody class="clickable-row" data-href="pages/print.html">
+                  <tr>
+                    <td></td>
+                    <td> 4</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 5</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 6</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <thead>
                     <tr>
-                     <td></td>
-                     <td> 4</td>
-                     <td> Print Function and Data Types </td>
-                     <td> A basic introduction to programs and programming </td>
-                 </tr>
-                     </tbody>
-                  </table>
-               </section>
-            </main>
-         </div>
+                      <th> </th>
+                      <th> # </th>
+                      <th> Topic: Scanner Function <i class="fa-solid fa-barcode"></i> </th>
+                      <th> Description </th>
+                    </tr>
+                  </thead>
+                <tbody class="clickable-row" data-href="pages/print.html">
+                  <tr>
+                    <td></td>
+                    <td> 7</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 8</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 9</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <thead>
+                    <tr>
+                      <th> </th>
+                      <th> # </th>
+                      <th> Topic: If Else & Case Function <i class="fa-solid fa-equals"></i> </th>
+                      <th> Description </th>
+                    </tr>
+                  </thead>
+                <tbody class="clickable-row" data-href="pages/print.html">
+                  <tr>
+                    <td></td>
+                    <td> 10</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 11</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td> 12</td>
+                    <td> Print Function and Data Types </td>
+                    <td> A basic introduction to programs and programming </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </main>
         </div>
-        
-        <!---------------------- tasks-here ---------------------->
+      </div>
 
-        <div id="tasks" style="display: none;">
-         <div class="tasks-wrapper">
-            <h4>tasks</h4>
-         </div>
+      <!---------------------- tasks-here ---------------------->
+      <div id="tasks" style="display: none;">
+        <div class="tasks-wrapper">
+          <h4>tasks</h4>
         </div>
-        
-        <div id="runcode" style="display: none;">
-         <div class="runcode-wrapper">
-            <iframe src="https://www.online-java.com/" title="Embedded Page" style="border: none;" scrolling="no"></iframe>
-         </div>
+      </div>
+      <div id="runcode" style="display: none;">
+        <div class="runcode-wrapper">
+          <iframe src="https://www.online-java.com/" title="Embedded Page" style="border: none;" scrolling="no"></iframe>
         </div>
-        
-        <div id="generator" style="display: none;">
-         <div class="generator-wrapper">
-            <h4>generator</h4>
-         </div>
+      </div>
+      <div id="generator" style="display: none;">
+        <div class="generator-wrapper">
+          <h4>generator</h4>
         </div>
-        
-        <div id="credits" style="display: none;">
-         <div class="credits-wrapper">
-            <h4>credits</h4>
-         </div>
+      </div>
+      <div id="credits" style="display: none;">
+        <div class="credits-wrapper">
+          <h4>credits</h4>
         </div>
-     </div>
-
-         <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-         <script src="./script.js"></script>
-   </body>
+      </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

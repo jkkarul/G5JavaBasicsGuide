@@ -211,6 +211,7 @@ i {
 	place-items: center;
   }
   
+
   .about-info {
 	width: 21ch;
 	animation: typing 1.5s steps(21), blink .5s step-end infinite alternate;
@@ -218,7 +219,7 @@ i {
 	overflow: hidden;
 	border-right: 3px solid;
 	font-family: monospace;
-	font-size: 52px;
+	font-size: 75px;
 	text-align: center;
   }
 
