@@ -359,4 +359,13 @@ th, td {
 	 align-items: center;
 	 height: 100vh;
 }
-
+/* -------------------- iframe/Extra Stuff ----------------------*/
+.iframe-container {
+    display: flex;
+    justify-content: center;
+	
+}
+.center-text {
+	font-size: 10px;
+    text-align: center;
+}
