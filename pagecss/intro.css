@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: -moz-hidden-unscrollable;
 }
 
 body {
@@ -243,7 +244,7 @@ p > i {
   }
 }
 
-/* -------------------- topics ----------------------*/
+/* -------------------- topic # 1 ----------------------*/
 
 #topic-wrapper {
 	display: flex;
@@ -255,7 +256,7 @@ p > i {
   
   main.table {
 	width: 82vw;
-	height: 81vh;
+	height: 92vh;
 	background-color: #0f0f0f;
 	backdrop-filter: blur(7px);
 	box-shadow: 0 0.4rem 0.8rem #0005;
@@ -288,7 +289,7 @@ p > i {
   
   .table__body {
 	width: 98%;
-	height: 83.8%;
+	height: 84.6%;
 	background-color: #171717;
 	font-size: 18px;
 	margin: 1.05rem auto;
@@ -339,7 +340,12 @@ p > i {
 	cursor: default;
   }
 
-/* -------------------- tasks ----------------------*/
+.introiframe {
+	width: 100%;
+	height: 100vh;
+}
+
+/* -------------------- topic-#2 ----------------------*/
 
 .tasks-wrapper {
   display: flex;
@@ -350,7 +356,7 @@ p > i {
   height: 100vh;
 }
 
-/* -------------------- generator ----------------------*/
+/* -------------------- topic-#3 ----------------------*/
 
 .generator-wrapper {
   display: flex;
@@ -361,7 +367,7 @@ p > i {
   height: 100vh;
 }
 
-/* -------------------- credits ----------------------*/
+/* -------------------- back-dontlistentocode-listentonotes ----------------------*/
 
 .credits-wrapper {
   display: flex;
@@ -370,21 +376,4 @@ p > i {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-/* -------------------- iframe/Extra Stuff ----------------------*/
-
-.iframe-container {
-  display: flex;
-  justify-content: center;
-}
-
-.center-text {
-  font-size: 10px;
-  text-align: center;
-}
-
-.center-textBelow {
-  font-size: 10px;
-  text-align: center;
 }
