@@ -283,6 +283,7 @@ main.table {
 
 tr > th > i {
 	font-size: 13px;
+	text-align: center;
 }
 
 table {
@@ -366,6 +367,10 @@ th, td {
 	
 }
 .center-text {
+	font-size: 10px;
+    text-align: center;
+}
+.center-textBelow {
 	font-size: 10px;
     text-align: center;
 }
