@@ -68,6 +68,7 @@ i {
   display: inline-block;
 }
 
+
 /* --------- navbar-menu-list -----------*/
 
 #accordian {
@@ -221,8 +222,8 @@ p > i {
 }
 
 .about-info {
-  width: 21ch;
-  animation: typing 1.5s steps(21), blink .5s step-end infinite alternate;
+  width: 24ch;
+  animation: typing 1.5s steps(24), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -340,11 +341,23 @@ p > i {
 	cursor: default;
   }
 
-.introiframe {
+  .iframe-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start; 
+	width: 98%;
+	height: 96%; 
+	margin: 0 auto; 
+	border-radius: 0.8rem; 	
+	padding-top: 15.3px; 
+  }
+  
+  .introiframe {
 	width: 100%;
-	height: 100vh;
-}
-
+	height: 100%;
+	border-radius: 0.8rem; 
+  }
+  
 /* -------------------- topic-#2 ----------------------*/
 
 .tasks-wrapper {
