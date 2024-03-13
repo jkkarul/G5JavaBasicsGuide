@@ -97,3 +97,38 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+// --------- Generator-Section -----------
+function hentai(n) {
+    var returnVar = "https://nhentai.to/g/";
+    var ranSauce = Math.floor((Math.random() * 0.9 + 0.1) * Math.pow(10, n));
+
+    if (n >= 7) {
+        return "No breaky my codey UwU - Koshka!";
+    }
+
+    while (ranSauce > 426505) {
+        ranSauce = Math.floor((Math.random() * 0.9 + 0.1) * Math.pow(10, n));
+    }
+
+    return {
+        number: ranSauce,
+        link: returnVar + ranSauce
+    };
+}
+
+function generateHentai() {
+    var result = hentai(6);
+    var resultText = result.number !== undefined
+        ? `Generated Number: ${result.number}, Sauce Link: <a href="${result.link}" target="_blank">${result.link}</a>`
+        : result;
+
+    var sauceResultElement = document.getElementById("SauceResult");
+    sauceResultElement.innerHTML = resultText;
+    sauceResultElement.style.color = "blue";
+    sauceResultElement.style.fontWeight = "bold";
+    sauceResultElement.style.textAlign = "center";
+
+    var generateButton = document.querySelector(".Generate-button");
+    generateButton.style.display = "block";
+    generateButton.style.margin = "0 auto";
+}
