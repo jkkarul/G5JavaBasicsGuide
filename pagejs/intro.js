@@ -59,6 +59,9 @@ $(document).ready(function() {
         } else if ($(this).find('a span').text() === 'Subject #4') {
             $('#topic4').fadeIn(500); 
             $('#info, #topics, #tasks, #generator, #credits').fadeOut(250); 
+        } else if ($(this).find('a span').text() === 'Next') {
+            $('#credits').fadeIn(500);
+            $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Back') {
             $('#credits').fadeIn(500);
             $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 

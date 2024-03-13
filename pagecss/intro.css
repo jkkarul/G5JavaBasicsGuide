@@ -12,7 +12,7 @@
 
 body {
   font-family: monospace;
-  background-color: #0f0f0f;
+  background-color: #0f0f0f;	
   box-sizing: border-box;
   overflow: auto;
 }
@@ -72,114 +72,118 @@ i {
 /* --------- navbar-menu-list -----------*/
 
 #accordian {
-  background: #171717;
-  width: 250px;
-  padding: 10px;
-  float: left;
-  height: 100vh;
-  overflow-x: hidden;
-  position: relative;
-  padding-right: 0px;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-}
-
-.main-navbar {
-  position: relative;
-}
-
-#accordian li {
-  list-style-type: none;
-}
-
-#accordian ul li a {
-  color: #ffffff80;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 90px;
-  text-align: center;
-  display: block;
-  padding: 0px 20px;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  position: relative;
-}
-
-#accordian>ul>li.active>a {
-  color: #ffffff;
-  background-color: transparent;
-  transition: all 0.7s;
-}
-
-#accordian a:not(:only-child):after {
-  content: "\f105";
-  position: absolute;
-  right: 20px;
-  top: 10%;
-  font-size: 14px;
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  padding-right: 3px;
-  vertical-align: middle;
-  font-weight: 900;
-  transition: 0.5s;
-}
-
-#accordian .active>a:not(:only-child):after {
-  transform: rotate(90deg);
-}
-
-.selector-active {
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  height: 37px;
-  top: 0px;
-  left: 0px;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265);
-  background-color: #0f0f0f;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-}
-
-.selector-active .top,
-.selector-active .bottom {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #0f0f0f;
-  right: 0;
-}
-
-.selector-active .top {
-  top: -25px;
-}
-
-.selector-active .bottom {
-  bottom: -25px;
-}
-
-.selector-active .top:before,
-.selector-active .bottom:before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #171717;
-}
-
-.selector-active .top:before {
-  left: -25px;
-  top: -25px;
-}
-
-.selector-active .bottom:before {
-  bottom: -25px;
-  left: -25px;
-}
+	background: #171717;
+	width: 250px;
+	padding: 10px;
+	float: left;
+	height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+	padding-right: 0px;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+  }
+  
+  .main-navbar {
+	position: relative;
+  }
+  
+  #accordian li {
+	list-style-type: none;
+  }
+  
+  #accordian ul li a {
+	color: #ffffff80;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 90px;
+	text-align: center;
+	display: block;
+	padding: 0px 20px;
+	transition-duration: 0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	position: relative;
+  }
+  
+  #accordian>ul>li.active>a {
+	color: #ffffff;
+	background-color: transparent;
+	transition: all 0.7s;
+  }
+  
+  #accordian a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+  }
+  
+  #accordian .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+  }
+  
+  .selector-active {
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	height: 37px;
+	top: 0px;
+	left: 0px;
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265);
+	background-color: #0f0f0f;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+  }
+  
+  .selector-active .top,
+  .selector-active .bottom {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #0f0f0f;
+	right: 0;
+  }
+  
+  .selector-active .top {
+	top: -25px;
+  }
+  
+  .selector-active .bottom {
+	bottom: -25px;
+  }
+  
+  .selector-active .top:before,
+  .selector-active .bottom:before {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #171717;
+  }
+  
+  .selector-active .top:before {
+	left: -25px;
+	top: -25px;
+  }
+  
+  .selector-active .bottom:before {
+	bottom: -25px;
+	left: -25px;
+  }
+  
+  i {
+	margin-right: 10px;
+  }
 
 /* --------- main-content -----------*/
 
