@@ -98,99 +98,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
 // --------- Generator-Section -----------
 
-function hentai(n) {
-  var returnVar = "https://nhentai.to/g/";
-  var ranSauce = Math.floor((Math.random() * 0.9 + 0.1) * Math.pow(10, n));
+const changeSourceButton = document.getElementById('changeSourceButton');
+    const iframe = document.getElementById('myFrame');
 
-  if (n >= 7) {
-    return "No breaky my codey UwU - Koshka!";
-  }
-
-  while (ranSauce > 426505) {
-    ranSauce = Math.floor((Math.random() * 0.9 + 0.1) * Math.pow(10, n));
-  }
-
-  return {
-    number: ranSauce,
-    link: returnVar + ranSauce
-  };
-}
-
-function generateHentai() {
-  var result = hentai(6);
-  var resultText = result.number !== undefined ?
-    `Generated Number: ${result.number}, Sauce Link: <a href="${result.link}" target="_blank">${result.link}</a>` :
-    result;
-
-  var sauceResultElement = document.getElementById("SauceResult");
-  sauceResultElement.innerHTML = resultText;
-  sauceResultElement.style.color = "blue";
-  sauceResultElement.style.fontWeight = "bold";
-  sauceResultElement.style.textAlign = "center";
-
-  var generateButton = document.querySelector(".Generate-button");
-  generateButton.style.display = "block";
-  generateButton.style.margin = "0 auto";
-}
-
-// --------- PasswordSection -----------
-var passwordEntered = false;
-
-function promptPasswordForKoshkaGenerator() {
-  if (!passwordEntered) {
-    var password = prompt("Please enter the password for Koshka Generator:");
-    
-    if (password === "KOSHKANSFW") { 
-      $('#generator').show(); 
-      generateAndLoad(); 
-      
-      passwordEntered = true;
-    } else {
-      alert("Incorrect password. Redirecting to Site Info.");
-      
-      window.location.href = "#site-info";
-      $('#accordian ul li').removeClass("active"); 
-      $('#accordian ul li:first-child').addClass("active"); 
-      $('#info').fadeIn(500); 
-      $('#topics, #tasks, #runcode, #generator, #credits').fadeOut(250); 
-      $('#generator').hide(); 
-    }
-  } else {
-    
-    $('#generator').show();
-    generateAndLoad(); 
-  }
-}
-// --------- Generator-Section -----------
-
-function generateAndLoad() {
-  var returnVar = "https://nhentai.to/g/";
-  var maxSauce = 426505; 
-
-  var ranSauce = Math.floor(Math.random() * maxSauce) + 1;
-
-  if (ranSauce >= 426505) {
-    alert("No breaky my codey UwU - Koshka!");
-    return;
-}
-
-  var result = {
-      number: ranSauce,
-      link: returnVar + ranSauce
-  };
-
-  var resultText = `Generated Number: ${result.number}, Sauce Link: <a href="${result.link}" target="_blank">${result.link}</a>`;
-
-  var sauceResultElement = document.getElementById("SauceResult");
-  sauceResultElement.innerHTML = resultText;
-
-  var url = result.link;
-  var iframe = document.createElement("iframe");
-  iframe.setAttribute("src", url);
-  iframe.setAttribute("width", "100%");
-  iframe.setAttribute("height", "100%");
-  document.getElementById("miniWebsite").innerHTML = '';
-  document.getElementById("miniWebsite").appendChild(iframe);
-}
+    changeSourceButton.addEventListener('click', function() {
+        const randomNumber = Math.floor(Math.random() * 426505) + 1;
+        const newURL = 'https://nhentai.to/g/' + randomNumber;
+        iframe.src = newURL;
+    });
