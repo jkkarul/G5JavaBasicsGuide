@@ -425,12 +425,12 @@ padding: 10px , 10px;
   top: 0;
   left: 0;
   right: 0;
-  position: center;
-  background-color: rgba(black);
-  color: white;
+  color: #00014e;
   padding: 5px;
-  font-weight: bolder;
-  size: 10;
+  font-weight: bold;
+  font-size: large;
+  z-index: 1;
+  margin-bottom: 10px;
 }
 /* -------------------- Png Section ----------------------*/
 .waifu-link {
