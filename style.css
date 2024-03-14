@@ -398,6 +398,12 @@ thead > tr > th {
     border: 1px solid #ccc;
     overflow: auto;
 }
+
+.generator__body {
+  height: 400px; 
+  overflow-y: auto;
+}
+
 /* -------------------- credits ----------------------*/
 
 .credits-wrapper {
@@ -407,4 +413,13 @@ thead > tr > th {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+/* -------------------- Png Section ----------------------*/
+.waifu-link {
+  display: inline-block;
+  background-image: url('img/Waifu.png');
+  background-size: 30px auto; 
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 10px;
 }
