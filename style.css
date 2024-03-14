@@ -362,18 +362,19 @@ thead > tr > th {
 }
 
 .Generate-button {
-    color: whitesmoke;
-    font-weight: bolder;
-    z-index: 1000;
-    width: 75%; 
-    height: 50px; 
-    background-color: #171717;
-    border: none; 
-    border-radius: 5px; 
-    line-height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    transition: background-color 0.2s ease;
+  color: whitesmoke;
+  font-weight: bolder;
+  z-index: 1000;
+  width: 75%;
+  height: 50px;
+  background-color: #171717;
+  border: none;
+  border-radius: 5px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  transition: background-color 0.2s ease;
+padding: 10px , 10px;
 }
 
 .Generate-button:hover {
@@ -391,16 +392,16 @@ thead > tr > th {
 }
 
 #miniWebsite {
-    margin: 0 auto; 
-    width: 90%; 
-    max-width: 1200px; 
-    height: 600px; 
-    border: 1px solid #ccc;
-    overflow: auto;
+  margin: 0 auto; 
+  width: 90vw; 
+  max-width: 1200px; 
+  height: 600px; 
+  border: 1px solid #ccc;
+  overflow: auto;
 }
 
 .generator__body {
-  height: 400px; 
+  height: 400px;
   overflow-y: auto;
 }
 
@@ -413,6 +414,23 @@ thead > tr > th {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.picture-cell {
+  position: relative;
+}
+
+.name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: center;
+  background-color: rgba(black);
+  color: white;
+  padding: 5px;
+  font-weight: bolder;
+  size: 10;
 }
 /* -------------------- Png Section ----------------------*/
 .waifu-link {
