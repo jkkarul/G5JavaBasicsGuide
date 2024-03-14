@@ -542,3 +542,20 @@ main.generator-table {
   align-items: center;
   height: 100vh;
 }
+
+.picture-cell {
+  position: relative;
+}
+
+.name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #00014e;
+  padding: 5px;
+  font-weight: bold;
+  font-size: large;
+  z-index: 1;
+  margin-bottom: 10px;
+}
