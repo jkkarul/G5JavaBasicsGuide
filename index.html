@@ -25,7 +25,7 @@
         <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Java Guide</span></a></li>
         <li><a href="javascript:void(0);"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a></li>
         <li><a href="javascript:void(0);"><i class="fa-solid fa-laptop-code"></i><span>Run Java Code</span></a></li>
-        <li><a href="javascript:void(0);"><i class="fa-regular fa-eye"></i><span>Koshka Generator</span></a></li>
+        <li><a href="javascript:void(0);" class="waifu-link"><span>Koshka Generator</span></a></li>
         <li><a href="javascript:void(0);"><i class="fa-solid fa-people-group"></i><span>Credits</span></a></li>
       </ul>
     </div>
@@ -184,15 +184,21 @@
       </div>
 
       <!---------------------- generator ---------------------->
-      <div id="generator" style="display: none;">
+      <div id="generator" style="display: block;">
         <div class="generator-wrapper">
-          <h1>Sauce-Generator</h1>
-          <div class="sauce-result">
-            <button class="Generate-button" onclick="generateHentai()">Generate Sauce Link</button>
-            <p id="SauceResult" class="sauce-result"></p>
-          </div>
+            <main class="table">
+                <section class="table__header">
+                    <h1>Sauce-Generator</h1>
+                </section>
+                <section id="table__body" class="table__body">
+                    <div id="miniWebsite"></div>
+                </section>
+                <div class="button-container">
+                    <button class="Generate-button" onclick="promptPasswordForKoshkaGenerator()">Generate and Load</button>
+                </div>
+            </main>
         </div>
-      </div>
+    </div>
 
       <!---------------------- credits ---------------------->
       <div id="credits" style="display: none;">

@@ -181,6 +181,16 @@ i {
   margin-right: 10px;
 }
 
+/* -------------------- Png Section ----------------------*/
+.waifu-link {
+  display: inline-block;
+  background-image: url('img/Waifu.png');
+  background-size: 30px auto; 
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 10px;
+}
+
 /* --------- main-content -----------*/
 
 .main-content {
@@ -362,23 +372,46 @@ thead > tr > th {
 }
 
 .Generate-button {
-  Color: rgb(10, 33, 82);
-  font-weight: bolder;
-  text-align: center;
-  width: 75%;
-  height: 50px;
-  background-color: rgb(10, 33, 82);
-  border: none;
-  border-radius: 5px;
-  line-height: 50px;
-  color: rgb(255, 255, 255);
-  position: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    z-index: 1000;
+    width: 75%; 
+    height: 50px; 
+    background-color: #171717;
+    border: none; 
+    border-radius: 5px; 
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    transition: background-color 0.2s ease;
 }
 
+.Generate-button:hover {
+    background-color: #0005;
+}
 .sauce-result .h4 {
-  color: whitesmoke;
-  font-weight: bold;
-  position: center;
+    color: #171717;
+    font-weight: bold;
+	position: center;
+	text-align: center;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#miniWebsite {
+    margin: 0 auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    height: 600px; 
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+.generator__body {
+  height: 400px; 
+  overflow-y: auto;
 }
 
 /* -------------------- credits ----------------------*/
