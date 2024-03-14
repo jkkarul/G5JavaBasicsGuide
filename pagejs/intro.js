@@ -46,25 +46,25 @@ $(document).ready(function() {
         });
         if ($(this).find('a span').text() === 'Subject #1') {
             $('#topics').fadeIn(500);
-            $('#tasks, #runcode, #generator, #credits, #info').fadeOut(250);
+            $('#tasks, #runcode, #generator, #credits, #info, #topic4').fadeOut(250);
         } else if ($(this).find('a span').text() === 'Topic:') {
             $('#info').fadeIn(500); 
-            $('#topics, #tasks, #runcode, #generator, #credits').fadeOut(250); 
+            $('#topics, #tasks, #runcode, #generator, #credits, #topic4').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Subject #2') {
             $('#tasks').fadeIn(500); 
-            $('#info, #topics, #runcode, #generator, #credits').fadeOut(250); 
+            $('#info, #topics, #runcode, #generator, #credits , #topic4').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Subject #3') {
             $('#generator').fadeIn(500); 
-            $('#info, #topics, #tasks, #runcode, #credits').fadeOut(250); 
+            $('#info, #topics, #tasks, #runcode, #credits, #topic4').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Subject #4') {
             $('#topic4').fadeIn(500); 
             $('#info, #topics, #tasks, #generator, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Next') {
             $('#credits').fadeIn(500);
-            $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
+            $('#info, #topics, #tasks, #runcode, #generator, #topic4').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Back') {
             $('#credits').fadeIn(500);
-            $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
+            $('#info, #topics, #tasks, #runcode, #generator, #topic4').fadeOut(250); 
         }
     });
 });
