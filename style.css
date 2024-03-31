@@ -4,6 +4,8 @@
 
 :root {
   --primary-color: mediumslateblue;
+  --font-size-base-siteinfo: 76px; 
+  --font-size-base-accordian: 16px;
 }
 
 * {
@@ -210,9 +212,99 @@ i {
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 75px;
+  font-size: 76px; /* Set the initial font size */
   text-align: center;
   cursor: default;
+}
+
+@media (max-width: 1800px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.95); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1700px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.9); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.85); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.8); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1500px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.75); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1400px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.7); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.65); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.6); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 1100px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.55); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 900px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.4); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 800px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.3); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 700px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.25); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 600px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.2); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 500px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.175); /* Adjust the font size based on the base size */
+  }
+}
+
+@media (max-width: 400px) {
+  .about-info {
+    font-size: calc(var(--font-size-base-siteinfo) * 0.15); /* Adjust the font size based on the base size */
+  }
 }
 
 @keyframes typing {
