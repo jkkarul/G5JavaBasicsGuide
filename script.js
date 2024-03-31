@@ -109,4 +109,3 @@ const changeSourceButton = document.getElementById('changeSourceButton');
         const newURL = 'https://nhentai.to/g/' + randomNumber;
         iframe.src = newURL;
     });
-      
