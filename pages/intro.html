@@ -22,13 +22,13 @@
             <div class="top"></div>
             <div class="bottom"></div>
           </div>
-          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span>Topic:</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Lesson #1</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Lesson #2</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Lesson #3</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>Lesson #4</span></a></li>
-          <li><a href="print.html"><i class="fa-regular fa-circle-right"></i></i><span>Next</span></a></li>
-          <li><a href="../index.html"><i class="fa-regular fa-circle-left"></i><span>Back</span></a></li>
+          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span data-value="Topic:">Topic:</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #1">Lesson #1</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #2">Lesson #2</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #3">Lesson #3</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #4">Lesson #4</span></a></li>
+          <li><a href="print.html"><i class="fa-regular fa-circle-right"></i></i><span data-value="Next">Next</span></a></li>
+          <li><a href="../index.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
         </ul>
       </div>
       
@@ -37,7 +37,7 @@
         <div id="info" style="display: none;">
           <div class="info-wrapper">
             <div class="about-info">
-              <p>
+              <p class="site-info-text" data-value="Topic #1: Get Started">
                 Topic #1: Get Started <i class="fa-solid fa-circle-play"></i>
               </p>
             </div>
@@ -49,7 +49,7 @@
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-               <h1><i class="fa-solid fa-book"></i>Programs and Programming Languages</h1>
+               <h1><i class="fa-solid fa-book"></i>#1: Programs and Programming Languages</h1>
               </section>
               <section class="table__body">
                 <table>
@@ -66,7 +66,7 @@
 
             <main class="table2" id="tab">
               <section class="table__header" id="table__header2">
-                <h1><i class="fa-solid fa-book"></i>Lesson #1: Programs and Programming Languages Module</h1>
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: Programs and Programming Languages</h1>
               </section>
               <section class="table__body" id="table__body2">
                 <table>
@@ -132,66 +132,258 @@
         <!---------------------- topic-2 listen to notes, didnt change classes ---------------------->
         <div id="tasks" style="display: none;">
           <div id="topic-wrapper">
-            <main class="table">
-               <section class="table__header">
-                <h1><i class="fa-brands fa-java"></i>Java Basics Guide: Introduction to Programming</h1>
-               </section>
-               <section class="table__body">
-                 <table>
-                   <thead>
-                   </thead>
-                     <div class="iframe-container">
-                        <iframe class="introiframe" src="https://www.youtube.com/embed/mG4NLNZ37y4?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Introduction to Java Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     </div>
-                   </tbody>
-                 </table>
-               </section>
-             </main>
-           </div>
-         </div>
-         
-        <!---------------------- topic-3 ---------------------->
-        <div id="generator" style="display: none;">
-         <div class="generator-wrapper">
-           <main class="table">
+            <main class="table" id="tab">
               <section class="table__header">
-               <h1><i class="fa-brands fa-java"></i>Java Basics Guide: Anatomy of a Java Program</h1>
-              </section>
-              <section class="table__body">
-                <table>
-                  <thead>
-                  </thead>
-                  <div class="iframe-container">
-                    <iframe class="introiframe" src="https://www.youtube.com/embed/vsxYucdzimA?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Anatomy of Java Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                 </div>
-                  </tbody>
-                </table>
-              </section>
-            </main>
-          </div>
-        </div>
-
-      <!---------------------- topic-4 ---------------------->
-
-      <div id="topic4" style="display: none;">
-         <div id="topic-wrapper">
-           <main class="table">
-              <section class="table__header">
-               <h1><i class="fa-brands fa-java"></i>Java Basics Guide: Installing Java / JDK</h1>
+               <h1><i class="fa-solid fa-book"></i>#2: Introduction to Java Programming</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
                   </thead>
                     <div class="iframe-container">
-                     <iframe class="introiframe" src="https://www.youtube.com/embed/ZGE3l4YTfh0" title="KFC Overeating" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/-C88r0niLQQ?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                   </tbody>
                 </table>
               </section>
             </main>
+
+
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: Introduction to Java Programming</h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+
+                      <h3>Learning Objectives</h3>
+                      <p>After completing this lesson, you should be able to:</p>
+                      <p>1. Define what a program and programming language are.</p>
+                      <p>2. Understand the concept of machine language and its binary nature.</p>
+                      <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
+                      <p>4. Describe high-level programming languages and their advantages.</p>
+                      <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
+                      <h3>Lesson Content</h3>
+
+                      <h4>1. Introduction to Programs and Programming Languages</h4>
+                      <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
+                      <p>• Programs are used to interact and communicate with computers.</p>
+                      <p>• To write programs, we use programming languages.</p>
+                      <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
+
+                      <h4>2. Machine Language</h4>
+                      <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
+                      <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
+                      <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
+                      <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
+
+                      <h4>3. Assembly Language</h4>
+                      <p>• Assembly language was developed to make programming easier compared to machine language.</p>
+                      <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
+                      <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
+                      <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
+
+                      <h4>4. High-Level Programming Languages</h4>
+                      <p>• High-level programming languages use English words and are easier to learn and use.</p>
+                      <p>• They are machine-independent, meaning programs can run on different machines.</p>
+                      <p>• Each instruction in a high-level language is called a statement.</p>
+                      <p>• A program written in a high-level language is called source code or a source program.</p>
+                      <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
+                      
+                      <h4>5. Translating Source Code to Machine Code</h4>
+                      <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
+                      <p>• It must be translated into machine code before execution.</p>
+                      <p>• This translation can be done using a compiler or an interpreter.</p>
+                      <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
+                      <p>• An interpreter translates and executes each statement of the source code one by one.</p>
+
+                      <h3>Review Questions</h3>
+                      <p>1. What is a program, and what is its purpose?</p>
+                      <p>2. Explain the difference between machine language, assembly language.</p>
+                      <p>3. What are the advantages of using high-level programming languages?</p>
+                      <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code. </p>
+                      
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+              <main class="table" id="tab">
           </div>
         </div>
+         
+        <!---------------------- topic-3 ---------------------->
+        <div id="generator" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+               <h1><i class="fa-solid fa-book"></i>#3: Anatomy of a Java Program</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/-C88r0niLQQ?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: Anatomy of a Java Program</h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+
+                      <h3>Learning Objectives</h3>
+                      <p>After completing this lesson, you should be able to:</p>
+                      <p>1. Define what a program and programming language are.</p>
+                      <p>2. Understand the concept of machine language and its binary nature.</p>
+                      <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
+                      <p>4. Describe high-level programming languages and their advantages.</p>
+                      <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
+                      <h3>Lesson Content</h3>
+
+                      <h4>1. Introduction to Programs and Programming Languages</h4>
+                      <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
+                      <p>• Programs are used to interact and communicate with computers.</p>
+                      <p>• To write programs, we use programming languages.</p>
+                      <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
+
+                      <h4>2. Machine Language</h4>
+                      <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
+                      <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
+                      <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
+                      <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
+
+                      <h4>3. Assembly Language</h4>
+                      <p>• Assembly language was developed to make programming easier compared to machine language.</p>
+                      <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
+                      <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
+                      <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
+
+                      <h4>4. High-Level Programming Languages</h4>
+                      <p>• High-level programming languages use English words and are easier to learn and use.</p>
+                      <p>• They are machine-independent, meaning programs can run on different machines.</p>
+                      <p>• Each instruction in a high-level language is called a statement.</p>
+                      <p>• A program written in a high-level language is called source code or a source program.</p>
+                      <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
+                      
+                      <h4>5. Translating Source Code to Machine Code</h4>
+                      <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
+                      <p>• It must be translated into machine code before execution.</p>
+                      <p>• This translation can be done using a compiler or an interpreter.</p>
+                      <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
+                      <p>• An interpreter translates and executes each statement of the source code one by one.</p>
+
+                      <h3>Review Questions</h3>
+                      <p>1. What is a program, and what is its purpose?</p>
+                      <p>2. Explain the difference between machine language, assembly language.</p>
+                      <p>3. What are the advantages of using high-level programming languages?</p>
+                      <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code. </p>
+                      
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+              <main class="table" id="tab">
+          </div>
+        </div>
+
+      <!---------------------- topic-4 ---------------------->
+
+      <div id="topic4" style="display: none;">
+        <div id="topic-wrapper">
+          <main class="table" id="tab">
+            <section class="table__header">
+             <h1><i class="fa-solid fa-book"></i>#4 Installing Java/JDK on Your Device</h1>
+            </section>
+            <section class="table__body">
+              <table>
+                <thead>
+                </thead>
+                  <div class="iframe-container">
+                   <iframe class="introiframe" src="https://www.youtube.com/embed/-C88r0niLQQ?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </tbody>
+              </table>
+            </section>
+          </main>
+
+
+          <main class="table2" id="tab">
+            <section class="table__header" id="table__header2">
+              <h1><i class="fa-solid fa-book"></i>Step-by-step: Installing Java/JDK on Your Device</h1>
+            </section>
+            <section class="table__body" id="table__body2">
+              <table>
+                <thead>
+                </thead>
+                  <div class="module-container">
+
+                    <h3>Learning Objectives</h3>
+                    <p>After completing this lesson, you should be able to:</p>
+                    <p>1. Define what a program and programming language are.</p>
+                    <p>2. Understand the concept of machine language and its binary nature.</p>
+                    <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
+                    <p>4. Describe high-level programming languages and their advantages.</p>
+                    <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
+                    <h3>Lesson Content</h3>
+
+                    <h4>1. Introduction to Programs and Programming Languages</h4>
+                    <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
+                    <p>• Programs are used to interact and communicate with computers.</p>
+                    <p>• To write programs, we use programming languages.</p>
+                    <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
+
+                    <h4>2. Machine Language</h4>
+                    <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
+                    <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
+                    <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
+                    <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
+
+                    <h4>3. Assembly Language</h4>
+                    <p>• Assembly language was developed to make programming easier compared to machine language.</p>
+                    <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
+                    <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
+                    <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
+
+                    <h4>4. High-Level Programming Languages</h4>
+                    <p>• High-level programming languages use English words and are easier to learn and use.</p>
+                    <p>• They are machine-independent, meaning programs can run on different machines.</p>
+                    <p>• Each instruction in a high-level language is called a statement.</p>
+                    <p>• A program written in a high-level language is called source code or a source program.</p>
+                    <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
+                    
+                    <h4>5. Translating Source Code to Machine Code</h4>
+                    <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
+                    <p>• It must be translated into machine code before execution.</p>
+                    <p>• This translation can be done using a compiler or an interpreter.</p>
+                    <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
+                    <p>• An interpreter translates and executes each statement of the source code one by one.</p>
+
+                    <h3>Review Questions</h3>
+                    <p>1. What is a program, and what is its purpose?</p>
+                    <p>2. Explain the difference between machine language, assembly language.</p>
+                    <p>3. What are the advantages of using high-level programming languages?</p>
+                    <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code. </p>
+                    
+                  </div>
+                </tbody>
+              </table>
+            </section>
+            <main class="table" id="tab">
+        </div>
+      </div>4
 
         <!---------------------- next ---------------------->
         <div id="runcode" style="display: none;">

@@ -44,28 +44,28 @@ $(document).ready(function() {
       "height": activeWidthVerticalHeight + "px",
       "width": activeWidthVerticalWidth + "px"
     });
-    if ($(this).find('a span').text() === 'Java Guide') {
+
+    if ($(this).find('a span').data('value') === 'Java Guide') {
       $('#topics').fadeIn(500);
       $('#tasks, #runcode, #generator, #credits, #info').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Site Info') {
+    } else if ($(this).find('a span').data('value') === 'Site Info') {
       $('#info').fadeIn(500);
       $('#topics, #tasks, #runcode, #generator, #credits').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Tasks') {
+    } else if ($(this).find('a span').data('value') === 'Tasks') {
       $('#tasks').fadeIn(500);
       $('#info, #topics, #runcode, #generator, #credits').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Run Java Code') {
+    } else if ($(this).find('a span').data('value') === 'Run Java Code') {
       $('#runcode').fadeIn(500);
       $('#info, #topics, #tasks, #generator, #credits').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Koshka Generator') {
+    } else if ($(this).find('a span').data('value') === 'Koshka Generator') {
       $('#generator').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #credits').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Credits') {
+    } else if ($(this).find('a span').data('value') === 'Credits') {
       $('#credits').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250);
     }
   });
 });
-
 // --------- clickable-row -----------
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -110,3 +110,50 @@ const changeSourceButton = document.getElementById('changeSourceButton');
         iframe.src = newURL;
     });
       
+// --------- hack-text-thingcool -----------
+const Alphapet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+document.querySelectorAll('li').forEach(li => {
+  const span = li.querySelector('span:not(i)');
+  if (span) {
+    // start\ animation on page load for the first span
+    if (span === document.querySelectorAll('li > a > span:not(i)')[0]) {
+      const finalText = span.dataset.value;
+      let iter = 0;
+      const inter = setInterval(() => {
+        span.innerText = finalText.split('')
+          .map((letter, index) => {
+            if (index < iter) {
+              return finalText[index];
+            }
+            return Alphapet[Math.floor(Math.random() * 26)];
+          })
+          .join('');
+
+        if (iter >= finalText.length) clearInterval(inter);
+
+        iter += 1 / 2;
+      }, 50);
+    }
+
+    // mouseover event listener for all spans
+    span.addEventListener('mouseover', (e) => {
+      const finalText = e.target.dataset.value;
+      let iter = 0;
+      const inter = setInterval(() => {
+        e.target.innerText = finalText.split('')
+          .map((letter, index) => {
+            if (index < iter) {
+              return finalText[index];
+            }
+            return Alphapet[Math.floor(Math.random() * 26)];
+          })
+          .join('');
+
+        if (iter >= finalText.length) clearInterval(inter);
+
+        iter += 1 / 2;
+      }, 50);
+    });
+  }
+});

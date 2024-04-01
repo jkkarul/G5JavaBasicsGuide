@@ -3,11 +3,21 @@
 /* --------- ignore -----------*/
 
 :root {
-  --primary-color: mediumslateblue;
   --font-size-base-siteinfo: 76px; 
   --font-size-base-accordian: 16px;
 }
 
+* {
+  transform-origin: center; 
+}
+
+@media (max-width: 1500px) {
+  * {
+    transform: scale(0.1); 
+    transition: transform 0.3s ease; 
+  }
+
+}
 * {
   margin: 0;
   padding: 0;

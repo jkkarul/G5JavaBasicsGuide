@@ -44,25 +44,26 @@ $(document).ready(function() {
       "height": activeWidthVerticalHeight + "px",
       "width": activeWidthVerticalWidth + "px"
     });
-    if ($(this).find('a span').text() === 'Lesson #1') {
+
+    if ($(this).find('a span').data('value') === 'Lesson #1') {
       $('#topics').fadeIn(500);
       $('#tasks, #runcode, #generator, #credits, #info, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Topic:') {
+    } else if ($(this).find('a span').data('value') === 'Topic:') {
       $('#info').fadeIn(500);
       $('#topics, #tasks, #runcode, #generator, #credits, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Lesson #2') {
+    } else if ($(this).find('a span').data('value') === 'Lesson #2') {
       $('#tasks').fadeIn(500);
       $('#info, #topics, #runcode, #generator, #credits , #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Lesson #3') {
+    } else if ($(this).find('a span').data('value') === 'Lesson #3') {
       $('#generator').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #credits, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Lesson #4') {
+    } else if ($(this).find('a span').data('value') === 'Lesson #4') {
       $('#topic4').fadeIn(500);
       $('#info, #topics, #tasks, #generator, #credits').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Next') {
+    } else if ($(this).find('a span').data('value') === 'Next') {
       $('#credits').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #generator, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Back') {
+    } else if ($(this).find('a span').data('value') === 'Back') {
       $('#credits').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #generator, #topic4').fadeOut(250);
     }
@@ -99,4 +100,52 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = href;
     }
   });
+});
+
+// --------- hack-text-thingcool -----------
+const Alphapet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+document.querySelectorAll('li').forEach(li => {
+  const span = li.querySelector('span:not(i)');
+  if (span) {
+    // start\ animation on page load for the first span
+    if (span === document.querySelectorAll('li > a > span:not(i)')[0]) {
+      const finalText = span.dataset.value;
+      let iter = 0;
+      const inter = setInterval(() => {
+        span.innerText = finalText.split('')
+          .map((letter, index) => {
+            if (index < iter) {
+              return finalText[index];
+            }
+            return Alphapet[Math.floor(Math.random() * 26)];
+          })
+          .join('');
+
+        if (iter >= finalText.length) clearInterval(inter);
+
+        iter += 1 / 2;
+      }, 50);
+    }
+
+    // mouseover event listener for all spans
+    span.addEventListener('mouseover', (e) => {
+      const finalText = e.target.dataset.value;
+      let iter = 0;
+      const inter = setInterval(() => {
+        e.target.innerText = finalText.split('')
+          .map((letter, index) => {
+            if (index < iter) {
+              return finalText[index];
+            }
+            return Alphapet[Math.floor(Math.random() * 26)];
+          })
+          .join('');
+
+        if (iter >= finalText.length) clearInterval(inter);
+
+        iter += 1 / 2;
+      }, 50);
+    });
+  }
 });
