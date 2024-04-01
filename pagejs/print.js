@@ -61,10 +61,13 @@ $(document).ready(function() {
             $('#info, #topics, #tasks, #runcode, #credits').fadeOut(250); 
         } else if ($(this).find('a span').text() === 'Back') {
             $('#credits').fadeIn(500);
-            $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250); 
-        }
+            $('#info, #top  ics, #tasks, #runcode, #generator').fadeOut(250); 
+        } else if ($(this).find('a span').text() === '') {
+        $('#credits').fadeIn(500);
+        $('#info, #topics, #tasks, #runcode, #generator').fadeOut(250);
+      }
     });
-});
+  });
 
 // --------- clickable-row -----------
 

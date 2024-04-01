@@ -44,19 +44,19 @@ $(document).ready(function() {
       "height": activeWidthVerticalHeight + "px",
       "width": activeWidthVerticalWidth + "px"
     });
-    if ($(this).find('a span').text() === 'Subject #1') {
+    if ($(this).find('a span').text() === 'Lesson #1') {
       $('#topics').fadeIn(500);
       $('#tasks, #runcode, #generator, #credits, #info, #topic4').fadeOut(250);
     } else if ($(this).find('a span').text() === 'Topic:') {
       $('#info').fadeIn(500);
       $('#topics, #tasks, #runcode, #generator, #credits, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Subject #2') {
+    } else if ($(this).find('a span').text() === 'Lesson #2') {
       $('#tasks').fadeIn(500);
       $('#info, #topics, #runcode, #generator, #credits , #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Subject #3') {
+    } else if ($(this).find('a span').text() === 'Lesson #3') {
       $('#generator').fadeIn(500);
       $('#info, #topics, #tasks, #runcode, #credits, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').text() === 'Subject #4') {
+    } else if ($(this).find('a span').text() === 'Lesson #4') {
       $('#topic4').fadeIn(500);
       $('#info, #topics, #tasks, #generator, #credits').fadeOut(250);
     } else if ($(this).find('a span').text() === 'Next') {
