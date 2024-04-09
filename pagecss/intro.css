@@ -482,6 +482,29 @@ thead > tr > th {
   color: #22b550;
 }
 
+.module-container {
+  margin: 1.54cm;
+}
+
+/* -------------------- topic-1 ----------------------*/
+
+
+#table__body2 h3 {
+  font-size: 21px;
+  font-style: bold;
+  text-align: center;
+  margin-bottom: 20pt;
+}
+
+#table__body2 p {
+  font-size: 16px;
+}
+
+#table__body2 h4 {
+  font-size: 16px;
+  font-style: bold;
+}
+
 /* -------------------- tasks ----------------------*/
 
 .tasks-wrapper {
