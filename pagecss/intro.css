@@ -27,24 +27,26 @@ body {
   font-family: monospace;
   background-color: #0f0f0f;
   box-sizing: border-box;
-  overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
 }
 
-*::-webkit-scrollbar {
-  width: 2px;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-*::-webkit-scrollbar-track {
-  background: #171717;
+::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar when not hovered */
+  height: 3px; /* Height of the scrollbar when not hovered */
 }
 
-*::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scroll thumb */
+  border-radius: 6px; /* Roundness of the scroll thumb */
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: #555;
+::-webkit-scrollbar-thumb:hover {
+  width: 6px; /* Width of the scrollbar when hovered */
+  height: 6px; /* Height of the scrollbar when hovered */
 }
 
 /* --------- profile -----------*/
@@ -341,7 +343,7 @@ i {
 
 main.table {
   width: 82vw;
-  height: 71vh;
+  height: 80vh;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -352,7 +354,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 110vh;
+  height: 95vh;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -364,7 +366,7 @@ main.table2 {
 
 #table__header2{
   width: 100%;
-  height: 7%;
+  height: 4.5rem;
   background-color: #171717;
   padding: .5rem 0rem;
   display: flex;
@@ -374,7 +376,7 @@ main.table2 {
 
 #table__body2{
   width: 98%;
-  height:85%;
+  height:86.65%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -385,7 +387,7 @@ main.table2 {
 
 .table__header {
   width: 100%;
-  height: 10%;
+  height: 4.5rem;
   background-color: #171717;
   padding: .5rem 0rem;
   display: flex;
@@ -408,7 +410,7 @@ h1 > i {
 
 .table__body {
   width: 98%;
-  height:83%;
+  height:84.1%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -463,7 +465,7 @@ thead > tr > th {
 .iframe-container {
   position: relative;
   width: 98%;
-  padding-bottom: 35.88%; 
+  padding-bottom: 40.9%; 
   overflow: hidden;
   margin: 0 auto; 
   border-radius: 0.8rem;
@@ -484,6 +486,12 @@ thead > tr > th {
 
 .module-container {
   margin: 1.54cm;
+  border: 1px dashed #ccc;
+  border-radius: 0.8rem;
+}
+
+.document-container {
+  margin: 2.54cm;
 }
 
 /* -------------------- topic-1 ----------------------*/

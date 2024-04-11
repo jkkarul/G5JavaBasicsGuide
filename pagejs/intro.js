@@ -48,7 +48,7 @@ $(document).ready(function() {
     if ($(this).find('a span').data('value') === 'Lesson #1') {
       $('#topics').fadeIn(500);
       $('#tasks, #runcode, #generator, #credits, #info, #topic4').fadeOut(250);
-    } else if ($(this).find('a span').data('value') === 'Topic:') {
+    } else if ($(this).find('a span').data('value') === 'Chapter:') {
       $('#info').fadeIn(500);
       $('#topics, #tasks, #runcode, #generator, #credits, #topic4').fadeOut(250);
     } else if ($(this).find('a span').data('value') === 'Lesson #2') {
