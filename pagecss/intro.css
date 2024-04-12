@@ -343,7 +343,7 @@ i {
 
 main.table {
   width: 82vw;
-  height: 80vh;
+  height: 48rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -354,7 +354,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 95vh;
+  height: 115.5rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -376,7 +376,7 @@ main.table2 {
 
 #table__body2{
   width: 98%;
-  height:86.65%;
+  height:93.39%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -491,28 +491,59 @@ thead > tr > th {
 }
 
 .document-container {
-  margin: 2.54cm;
+  margin-left: 3.84cm;
+  margin-right: 3.84cm;
+  margin-top: 1.84cm;
+  margin-bottom: 1.84cm;
 }
+
+.module-container p + h3 {
+  margin-top: 20pt;
+}
+
+.module-container h4 {
+  margin-bottom: 20pt;
+  margin-top: 20pt;
+}
+
 
 /* -------------------- topic-1 ----------------------*/
 
 
 #table__body2 h3 {
-  font-size: 21px;
+  font-size: 28px;
   font-style: bold;
   text-align: center;
-  margin-bottom: 20pt;
 }
 
 #table__body2 p {
-  font-size: 16px;
+  font-size: 18px;
+  margin-left: 20pt;
+  margin-bottom: 2pt;
 }
 
 #table__body2 h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-style: bold;
 }
 
+#table__body2 p > h2 {
+  margin-bottom: 20pt;
+}
+
+#learnobj {
+  margin-bottom: 38pt;
+}
+
+#lessoncont {
+  margin-top: 38pt;
+  margin-bottom: 38pt;
+}
+
+#reviewquest {
+  margin-top: 38pt;
+  margin-bottom: 38pt;
+}
 /* -------------------- tasks ----------------------*/
 
 .tasks-wrapper {
