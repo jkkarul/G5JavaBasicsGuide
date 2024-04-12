@@ -8,7 +8,9 @@
     <script src="https://kit.fontawesome.com/3ea5ea8213.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../pagecss/intro.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    </head>
 
     <body>
 
@@ -93,33 +95,60 @@
                       <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
                       <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
                       <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
-                      <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
+                      <p>• Example: This is how adding 2 and 3 (2+3) is written in machine language:</p>
+                      <pre>
+                        <code>1010101010101010</code>
+                      </pre>
 
-                      <h4>3. Assembly Language</h4>
+                      <h4 id="assemblylang">3. Assembly Language</h4>
                       <p>• Assembly language was developed to make programming easier compared to machine language.</p>
-                      <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
+                      <p>• It is also machine-dependent, but it uses keywords instead of binary codes.</p>
                       <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
-                      <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
+                      <p>• The # symbol in assembly is used for comments that the machine ignores.</p>
+                      <p>• Example: This is how adding 2 and 3 is written in assembly language:</p>
+                      <pre>
+                        <code>.section .text
+.globl _start
+
+_start:
+    movl $2, %eax    # Load the value 2 into the EAX register
+    movl $3, %ebx    # Load the value 3 into the EBX register
+    addl %ebx, %eax  # Add the contents of EBX to EAX, storing the result in EAX
+    # At this point, the EAX register contains the value 5
+
+    # Exit the program
+    movl $1, %eax    # System call number 1 (exit)
+    xorl %ebx, %ebx  # Exit status 0 (success)
+    int $0x80        # Make the system call</code>
+  </pre>
+
+                      <p id="complicated">• Assembly code, while more readable than raw binary, is still complex, which is why high-level programming languages were developed:</p>
 
                       <h4>4. High-Level Programming Languages</h4>
                       <p>• High-level programming languages use English words and are easier to learn and use.</p>
                       <p>• They are machine-independent, meaning programs can run on different machines.</p>
                       <p>• Each instruction in a high-level language is called a statement.</p>
                       <p>• A program written in a high-level language is called source code or a source program.</p>
-                      <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
-                      
+                      <p>• The // in Java symbols used to indicate single-line comments, which the machine will ignore.</p>
+                      <p>• Example: This is how adding 2 and 3 is written in Java, a high-level language:</p>
+                      <pre id="java-add"><code class="language-java">int result = 2 + 3;
+System.out.println(result); // Output: 5
+</code></pre>
+
                       <h4>5. Translating Source Code to Machine Code</h4>
                       <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
                       <p>• It must be translated into machine code before execution.</p>
                       <p>• This translation can be done using a compiler or an interpreter.</p>
                       <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
                       <p>• An interpreter translates and executes each statement of the source code one by one.</p>
-
+                    
                       <h3 id="reviewquest">Review Questions</h3>
+                      <div id="questionlist">
                       <p>1. What is a program, and what is its purpose?</p>
                       <p>2. Explain the difference between machine language, assembly language.</p>
                       <p>3. What are the advantages of using high-level programming languages?</p>
                       <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code.</p>
+                      </div>
                       </div>
                     </div>
                   </tbody>
@@ -404,5 +433,7 @@
 
       <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
       <script src="../pagejs/intro.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>   
+      <script>hljs.highlightAll();</script>
     </body>
 </html>
