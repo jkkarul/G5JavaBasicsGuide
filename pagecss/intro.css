@@ -369,7 +369,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 153rem;
+  height: 194rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -391,7 +391,7 @@ main.table2 {
 
 #table__body2{
   width: 98%;
-  height:95.05%;
+  height:96.05%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -502,8 +502,8 @@ thead > tr > th {
 }
 
 .document-container {
-  margin-left: 3.84cm;
-  margin-right: 3.84cm;
+  margin-left: 3.384cm;
+  margin-right: 3.384cm;
   margin-top: 1.84cm;
   margin-bottom: 1.84cm;
 }
@@ -513,29 +513,34 @@ thead > tr > th {
 }
 
 .module-container h4 {
-  margin-bottom: 20pt;
+  margin-bottom: 18pt;
   margin-top: 20pt;
 }
 
-/* -------------------- topic-1 ----------------------*/
+.module-container h5 {
+  font-size: 18px;
+  font-style: bold;
+  margin-top: 10pt;
+}
 
-
-#table__body2 h3 {
+.module-container h3 {
   font-size: 28px;
   font-style: bold;
   text-align: center;
 }
 
-#table__body2 p {
+.module-container p {
   font-size: 18px;
   margin-left: 20pt;
-  margin-bottom: 2pt;
+  margin-bottom: 10pt;
 }
 
-#table__body2 h4 {
-  font-size: 18px;
+.module-container h4 {
+  font-size: 21px;
   font-style: bold;
 }
+
+/* -------------------- topic-1 ----------------------*/
 
 #table__body2 p > h2 {
   margin-bottom: 20pt;
@@ -565,6 +570,50 @@ thead > tr > th {
 
 #assemblylang {
   margin-top: -14pt;
+}
+
+#extrainfo {
+  margin-bottom: 28pt !important;
+}
+
+.pexample {
+  margin-left: 25pt;
+  margin-top: 2pt;
+}
+
+/* -------------------- topic-2 ----------------------*/
+
+main.table3 {
+  width: 82vw;
+  height: 160rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#table__body3{
+  width: 98%;
+  height:95.2%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+#table__header3{
+  width: 100%;
+  height: 4.5rem;
+  background-color: #171717;
+  padding: .5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -------------------- tasks ----------------------*/

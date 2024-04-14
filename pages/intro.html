@@ -94,45 +94,53 @@
                       <h4>2. Machine Language</h4>
                       <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
                       <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
-                      <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
-                      <p>• Example: This is how adding 2 and 3 (2+3) is written in machine language:</p>
+                      <p>• Machine language instructions are in the form of binary codes that directly represent the specific operations the computer's processor can perform.</p>
+                      <p>• These binary codes are the most basic and fundamental way of communicating with a computer's hardware.</p>
+                      <p>• Writing programs directly in machine language is extremely difficult and tedious for humans, as it requires knowing the exact binary codes for every operation.</p>
+                      <h5>• Example - In machine language, the binary code to add two numbers might look something like this:</h5>
                       <pre>
-                        <code>1010101010101010</code>
+                        <code>10000011 00000010 00000011</code>
                       </pre>
 
+                      <p id="complicated">• This string of 1s and 0s would instruct the processor to add the values stored in two specific memory 
+                        locations and store the result in another location.</p>
+
+                      <p id="extrainfo">• This low-level, binary representation is what the computer's hardware can directly understand and execute.</p>
+
                       <h4 id="assemblylang">3. Assembly Language</h4>
-                      <p>• Assembly language was developed to make programming easier compared to machine language.</p>
-                      <p>• It is also machine-dependent, but it uses keywords instead of binary codes.</p>
-                      <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
-                      <p>• The # symbol in assembly is used for comments that the machine ignores.</p>
-                      <p>• Example: This is how adding 2 and 3 is written in assembly language:</p>
+                      <p>• Assembly language is a type of programming language that is very close to the way a computer's processor works.</p>
+                      <p>• It's different from the higher-level languages that most people are familiar with, like Python or Java.</p>
+                      <p>• In high-level languages, you write code using words and concepts that are easy for humans to understand. 
+                        The computer then has to figure out how to translate that code into the specific instructions it can actually execute.</p>
+                      <p>• With assembly language, it's the other way around. Instead of using human-friendly words, assembly language uses the 
+                        exact same instructions and codes that the computer's processor can understand and execute directly.</p>
+                        <p>• This gives the programmer a lot of control over the computer's hardware, but it also makes the code more complex and difficult to write.</p>
+                        <p>• The main idea behind assembly language is to provide a way for programmers to have more direct access to the inner workings of the computer, 
+                          without having to deal with all the low-level details of the processor itself.</p>
+                          <p>• It's like having a "direct line" to the computer's brain, instead of going through all the layers of abstraction.</p>
+                      <h5>• Example: Adding 2 and 3 in Assembly Language</h5>
                       <pre>
-                        <code>.section .text
-.globl _start
-
-_start:
-    movl $2, %eax    # Load the value 2 into the EAX register
-    movl $3, %ebx    # Load the value 3 into the EBX register
-    addl %ebx, %eax  # Add the contents of EBX to EAX, storing the result in EAX
-    # At this point, the EAX register contains the value 5
-
-    # Exit the program
-    movl $1, %eax    # System call number 1 (exit)
-    xorl %ebx, %ebx  # Exit status 0 (success)
-    int $0x80        # Make the system call</code>
+                        <code>MOV AX, 2   # Move the value 2 into the AX register
+ADD AX, 3   # Add 3 to the value in the AX register
+# symbol is used to indicate a comment, which the assembler will ignore.</code>
   </pre>
-
-                      <p id="complicated">• Assembly code, while more readable than raw binary, is still complex, which is why high-level programming languages were developed:</p>
+                      <p id="complicated">• In this example, the MOV instruction moves the value 2 into the AX register, 
+                        and the ADD instruction adds the value 3 to the contents of the AX register. This example is an oversimplified 
+                        version of actual assembly language writing. This is why high-level programming languages were made:</p>
 
                       <h4>4. High-Level Programming Languages</h4>
                       <p>• High-level programming languages use English words and are easier to learn and use.</p>
-                      <p>• They are machine-independent, meaning programs can run on different machines.</p>
                       <p>• Each instruction in a high-level language is called a statement.</p>
                       <p>• A program written in a high-level language is called source code or a source program.</p>
-                      <p>• The // in Java symbols used to indicate single-line comments, which the machine will ignore.</p>
-                      <p>• Example: This is how adding 2 and 3 is written in Java, a high-level language:</p>
-                      <pre id="java-add"><code class="language-java">int result = 2 + 3;
-System.out.println(result); // Output: 5
+                      <p>• The key differences between high-level languages like Java and low-level languages like assembly <br>or machine code are:</p>
+                      <div class="pexample">
+                      <p>• High-level languages use more human-readable syntax and instructions, making them easier to understand and write.</p>
+                      <p>• High-level languages are machine-independent, meaning the same code can run on different types of computers without modification.</p>  
+                      <p>• High-level languages require a compiler or interpreter to translate the code into the machine-specific instructions the computer can execute directly.</p>
+                    </div>
+                      <h5>• Example: This is how adding 2 and 3 is written in Java, a high-level language:</h5>
+                      <pre id="java-add"><code class="language-java">int result = 2 + 3; // This adds 2 and 3 and stores the result in the variable 'result'
+System.out.println(result); // This displays the result to the user
 </code></pre>
 
                       <h4>5. Translating Source Code to Machine Code</h4>
@@ -163,7 +171,7 @@ System.out.println(result); // Output: 5
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-               <h1><i class="fa-solid fa-book"></i>#2: Introduction to Java Programming</h1>
+              <h1><i class="fa-solid fa-book"></i>#2: Introduction to Java Programming</h1>
               </section>
               <section class="table__body">
                 <table>
@@ -178,31 +186,32 @@ System.out.println(result); // Output: 5
             </main>
 
 
-            <main class="table2" id="tab">
-              <section class="table__header" id="table__header2">
+            <main class="table3" id="tab">
+              <section class="table__header" id="table__header3">
                 <h1><i class="fa-solid fa-book"></i>Lesson Module: Introduction to Java Programming</h1>
               </section>
-              <section class="table__body" id="table__body2">
+              <section class="table__body" id="table__body3">
                 <table>
                   <thead>
                   </thead>
                     <div class="module-container">
                       <div class="document-container">
-                      <h3>Learning Objectives</h3>
-                      <p>After completing this lesson, you should be able to:</p>
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <h4>After completing this lesson, you should be able to:</h4>
                       <p>1. Understand the general information about Java and its development.</p>
                       <p>2. Explain the Java Language Specification and its syntax and semantics.</p>
                       <p>3. Define what an API (Application Programming Interface) is and its purpose.</p>
-                      <p>4. Describe the different editions of Java and their use cases.</p>
-                      <p>5. Understand the components of the Java Development Kit (JDK) and their roles.</p>
-                      <p>6. Identify what an Integrated Development Environment (IDE) is and its features.</p>
+                      <p>4. Understand the components of the Java Development Kit (JDK) and their roles.</p>
+                      <p>5. Identify what an Integrated Development Environment (IDE) is and its features.</p>
 
-                      <h3>Lesson Content</h3>
+                      <h3 id="lessoncont">Lesson Content</h3>
                       <h4>1. General Information about Java</h4>
                       <p>• Java was developed at Sun Microsystems (acquired by Oracle in 2010).</p>
                       <p>• It is a general-purpose and powerful programming language.</p>
                       <p>• Java is used for developing software that runs on mobile, desktop, and server platforms.</p>
                       <p>• Java is machine-independent, meaning programs can run on different machines.</p>
+                      <p>• Java is an object-oriented language, allowing code to be organized into reusable components called objects.</p>
+                      <p>• Java requires variables to be declared with a specific data type (e.g., int, double, String) before they can be used.</p>
 
                       <h4>2. Java Language Specification</h4>
                       <p>• The Java Language Specification defines the syntax and semantics of Java.</p>
@@ -215,8 +224,13 @@ System.out.println(result); // Output: 5
                       <p>• An API, or library, contains predefined Java code that developers can use.</p>
                       <p>• APIs provide ready-to-use code, making development faster and easier.</p>
                       <p>• Developers don't have to write everything from scratch.</p>
+                      <p>• In addition to the core Java APIs, there are many third-party APIs available for various 
+                        purposes, such as graphics, networking, databases, and more.</p>
+                      <p>• Popular third-party APIs include Swing and JavaFX (for GUI development), Apache Commons, and Spring Framework.</p>
+                      <p>• These APIs (Application Programming Interfaces) are pre-built code libraries that allow different software programs to interact and 
+                        share functionality with each other in a standardized way.</p>
 
-                      <h4>4. High-Level Programming Languages</h4>
+                      <h4>4. Editions of Java</h4>
                       <p>• Java Standard Edition (Java SE): Used for developing desktop applications.</p>
                       <p>• Java Enterprise Edition (Java EE): Used for developing server-side applications.</p>
                       <p>• Java Micro Edition (Java ME): Used for developing mobile applications.</p>
@@ -226,14 +240,16 @@ System.out.println(result); // Output: 5
                       <p>• The JDK is a set of programs that enable Java development.</p>
                       <p>• It includes the Java Runtime Environment (JRE) for running Java programs.</p>
                       <p>• Both JDK and JRE contain the Java Virtual Machine (JVM).</p>
-                      <p>• The JVM executes Java programs on different machines, making Java machine-independent.</p>
+                      <p>• The Java Virtual Machine (JVM) provides a consistent software environment that runs Java programs, 
+                        abstracting away the differences between various hardware architectures and operating systems.</p>
+                      <p>This allows Java programs to be portable and run on different machines without needing to be recompiled or modified specifically for each platform.</p>
 
                       <h4>6. Integrated Development Environment (IDE)</h4>
                       <p>• An IDE is a program that provides an environment for writing, compiling, building, and running Java programs.</p>
                       <p>• IDEs typically include tools for debugging and finding errors.</p>
-                      <p>• Popular Java IDEs include NetBeans, Eclipse, and IntelliJ IDEA</p>
+                      <p>• Popular Java IDEs include NetBeans, Eclipse, IntelliJ IDEA, Android Studio (for Android app development), and Visual Studio Code (Personal Favorite).</p>
 
-                      <h3>Review Questions</h3>
+                      <h3 id="reviewquest">Review Questions</h3>
                       <p>1. What is the purpose of the Java Language Specification?</p>
                       <p>2. Explain the difference between syntax and semantics errors in Java.</p>
                       <p>3. Why are APIs (libraries) useful in Java development?</p>
@@ -279,14 +295,14 @@ System.out.println(result); // Output: 5
                     <div class="module-container">
                       <div class="document-container">
 
-                      <h3>Learning Objectives</h3>
+                      <h3 id="learnobj">Learning Objectives</h3>
                       <p>After completing this lesson, you should be able to:</p>
                       <p>1. Define what a program and programming language are.</p>
                       <p>2. Understand the concept of machine language and its binary nature.</p>
                       <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
                       <p>4. Describe high-level programming languages and their advantages.</p>
                       <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
-                      <h3>Lesson Content</h3>
+                      <h3 id="lessoncont">Lesson Content</h3>
 
                       <h4>1. Introduction to Programs and Programming Languages</h4>
                       <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
@@ -320,7 +336,7 @@ System.out.println(result); // Output: 5
                       <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
                       <p>• An interpreter translates and executes each statement of the source code one by one.</p>
 
-                      <h3>Review Questions</h3>
+                      <h3 id="reviewquest">Review Questions</h3>
                       <p>1. What is a program, and what is its purpose?</p>
                       <p>2. Explain the difference between machine language, assembly language.</p>
                       <p>3. What are the advantages of using high-level programming languages?</p>
@@ -366,7 +382,7 @@ System.out.println(result); // Output: 5
                   <div class="module-container">
                     <div class="document-container">
 
-                    <h3>Learning Objectives</h3>
+                    <h3 id="learnobj">Learning Objectives</h3>
                     <p>After completing this lesson, you should be able to:</p>
                     <p>1. Define what a program and programming language are.</p>
                     <p>2. Understand the concept of machine language and its binary nature.</p>
@@ -407,7 +423,7 @@ System.out.println(result); // Output: 5
                     <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
                     <p>• An interpreter translates and executes each statement of the source code one by one.</p>
 
-                    <h3>Review Questions</h3>
+                    <h3 id="reviewquest">Review Questions</h3>
                     <p>1. What is a program, and what is its purpose?</p>
                     <p>2. Explain the difference between machine language, assembly language.</p>
                     <p>3. What are the advantages of using high-level programming languages?</p>
