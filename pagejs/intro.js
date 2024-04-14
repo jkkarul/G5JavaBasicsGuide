@@ -149,3 +149,31 @@ document.querySelectorAll('li').forEach(li => {
     });
   }
 });
+
+// codeblock copyable
+function copyCodeToClipboard(codeSnippetId) {
+  const codeSnippetElement = document.getElementById(codeSnippetId);
+
+  const codeText = codeSnippetElement.textContent;
+
+  const tempInput = document.createElement('textarea');
+  tempInput.value = codeText;
+  document.body.appendChild(tempInput);
+
+  tempInput.select();
+  document.execCommand('copy');
+
+  document.body.removeChild(tempInput);
+
+  const copyButtonElement = codeSnippetElement.nextElementSibling;
+
+  const iconElement = copyButtonElement.querySelector('i');
+
+  copyButtonElement.innerHTML = '<i class="fa-regular fa-copy"></i> COPIED';
+
+  setTimeout(() => {
+    copyButtonElement.innerHTML = '<i class="fa-regular fa-copy"></i> JAVA';
+  }, 2000);
+
+  console.log('Code copied to clipboard!');
+}

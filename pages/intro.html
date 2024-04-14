@@ -276,7 +276,7 @@ System.out.println(result); // This displays the result to the user
                   <thead>
                   </thead>
                     <div class="iframe-container">
-                     <iframe class="introiframe" src="https://www.youtube.com/embed/-C88r0niLQQ?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/vsxYucdzimA?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Anatomy of Java Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </tbody>
                 </table>
@@ -284,11 +284,11 @@ System.out.println(result); // This displays the result to the user
             </main>
 
 
-            <main class="table2" id="tab">
-              <section class="table__header" id="table__header2">
+            <main class="table4" id="tab">
+              <section class="table__header" id="table__header4">
                 <h1><i class="fa-solid fa-book"></i>Lesson Module: Anatomy of a Java Program</h1>
               </section>
-              <section class="table__body" id="table__body2">
+              <section class="table__body" id="table__body4">
                 <table>
                   <thead>
                   </thead>
@@ -297,50 +297,101 @@ System.out.println(result); // This displays the result to the user
 
                       <h3 id="learnobj">Learning Objectives</h3>
                       <p>After completing this lesson, you should be able to:</p>
-                      <p>1. Define what a program and programming language are.</p>
-                      <p>2. Understand the concept of machine language and its binary nature.</p>
-                      <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
-                      <p>4. Describe high-level programming languages and their advantages.</p>
-                      <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
+                      <p>1. Understand the concepts of classes and objects in Java.</p>
+                      <p>2. Identify the structure of a Java class and its components.</p>
+                      <p>3. Explain the purpose and structure of methods in Java.</p>
+                      <p>4. Recognize the importance and structure of the main method as the entry point for program execution.</p>
+                      <p>5. Apply naming conventions for classes, methods, and variables in Java.</p>
+                      <p>6. Describe the structure of a basic Java program, including the use of packages, access modifiers, and comments.</p>
+                      <p>7. Understand the concepts of variables and data types in Java.</p>
                       <h3 id="lessoncont">Lesson Content</h3>
 
-                      <h4>1. Introduction to Programs and Programming Languages</h4>
-                      <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
-                      <p>• Programs are used to interact and communicate with computers.</p>
-                      <p>• To write programs, we use programming languages.</p>
-                      <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
+                      <h4>1. Classes and Objects</h4>
+                      <p>• A class is a blueprint for creating objects.</p>
+                      <p>• An object is an instance of a class.</p>
+                      <p>• Example: A car factory (class) produces individual cars (objects).</p>
 
-                      <h4>2. Machine Language</h4>
-                      <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
-                      <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
-                      <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
-                      <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
+                      <h4>2. Java Class Structure</h4>
+                      <p>• Classes are defined using the <span class="pcode">class</span> keyword, followed by the class name and a pair of braces <span class="pcode">{}</span>.</p>
+                      <p>• The code for the class is written inside the braces.</p>
+                      <h5>• Example:</h5>
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-1">public class MyClass {
+// code goes here
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
 
-                      <h4>3. Assembly Language</h4>
-                      <p>• Assembly language was developed to make programming easier compared to machine language.</p>
-                      <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
-                      <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
-                      <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
+                      <h4>3. Methods</h4>
+                      <p>• A method is a group of instructions that perform a specific task.</p>
+                      <p>• Examples: adding two numbers -> printing a greeting -> getting user input.</p>
+                      <p>• Methods are defined with a return type, name, parameters, and a body (code block).</p>
+                      <h5>• Example:</h5>
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-2">public int addNumbers(int a, int b) {
+return a + b;
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-2')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>  
 
-                      <h4>4. High-Level Programming Languages</h4>
-                      <p>• High-level programming languages use English words and are easier to learn and use.</p>
-                      <p>• They are machine-independent, meaning programs can run on different machines.</p>
-                      <p>• Each instruction in a high-level language is called a statement.</p>
-                      <p>• A program written in a high-level language is called source code or a source program.</p>
-                      <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
-                      
-                      <h4>5. Translating Source Code to Machine Code</h4>
-                      <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
-                      <p>• It must be translated into machine code before execution.</p>
-                      <p>• This translation can be done using a compiler or an interpreter.</p>
-                      <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
-                      <p>• An interpreter translates and executes each statement of the source code one by one.</p>
+                      <h4>4. The main Method</h4>
+                      <p>• The <span class="pcode">main</span> method is a special method automatically called when a Java program is run.</p>
+                      <p>• It is the starting point of execution for a Java program, and every Java program must have a <span class="pcode">main</span> method.</p>
+                      <p>• The <span class="pcode">main</span> method serves as the entry point for the program, where the execution begins.</p>
+                      <h5>• Example:</h5>
+
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-3">public static void main(String[] args) {
+// program code goes here
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-3')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      <h4>5. Naming Conventions</h4>
+                      <p>• PascalCase: Used for naming classes (e.g., <span class="pcode">MyClas</span>).</p>
+                      <p>• camelCase: Used for naming methods and variables (e.g., <span class="pcode">myMethod</span>, <span class="pcode">myVariable</span>).</p>
+                      <p>• snake_case: Used for naming constants (e.g., <span class="pcode">MY_CONSTANT</span>).</p>
+                      <p>• The use of different naming conventions (PascalCase for classes, camelCase for methods and variables, snake_case for constants) in Java aids code readability, 
+                        maintainability, and adheres to widely accepted standards and best practices.</p>
+
+                      <h4>6. Java Program Structure</h4>
+                      <p>• A Java program consists of at least one class.</p>
+                      <p>• The main method is defined inside a class.</p>
+                      <p>• The program code is written inside the main method's body.</p>
+                      <p>• Comments play an important role in documenting and explaining the code, making it easier to understand and maintain.</p>
+                      <p>• Variables are used to store data in a Java program.</p>
+                      <p>• Java has a variety of data types, such as int (integers), double (floating-point numbers), boolean (true/false), and String (text).</p>
+                      <p>• Variables are declared with a data type and a unique name, and their values can be assigned, read, and updated throughout the program.</p>
+                      <h5>• Example of a Java program with each line explained:</h5>
+
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-4">// The class declaration starts with the 'class' keyword
+// The class name should be a descriptive, meaningful name
+// In Java, class names are usually written in PascalCase
+// The class name should also be the same name as your file name
+public class Main {
+                          
+// The 'main' method is the entry point of the program
+// The 'public' access modifier makes the method accessible from outside the class
+// The 'static' keyword means the method can be called without creating an instance of the class
+// The 'void' return type means the method doesn't return any value
+public static void main(String[] args) {
+                          
+// Print a message to the console
+// The 'System.out.println()' method is used to output text
+System.out.println("Hello, World!");
+                          
+// Declare a variable to store an integer value
+// Variable names should be descriptive and use camelCase
+int myVariable = 42;
+                          
+// Print the value of the variable
+System.out.println("The value of myVariable is: " + myVariable);
+  }
+}
+// You can copy this code on the top right and try it in the "Run Java Code" tab</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-4')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
 
                       <h3 id="reviewquest">Review Questions</h3>
-                      <p>1. What is a program, and what is its purpose?</p>
-                      <p>2. Explain the difference between machine language, assembly language.</p>
-                      <p>3. What are the advantages of using high-level programming languages?</p>
-                      <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code. </p>
+                      <p>1. What is the difference between a class and an object?</p>
+                      <p>2.	Describe the structure of a Java class.</p>
+                      <p>3.	Explain the purpose and structure of a method in Java</p>
+                      <p>4.	Why is the main method important in a Java program?</p>
+                      <p>5.	Give examples of naming conventions used in Java for classes, methods, and variables.</p>
+                      <p>6.	What are the essential components of a basic Java program?</p>
                       </div>
                     </div>
                   </tbody>
