@@ -97,10 +97,9 @@
                       <p>• Machine language instructions are in the form of binary codes that directly represent the specific operations the computer's processor can perform.</p>
                       <p>• These binary codes are the most basic and fundamental way of communicating with a computer's hardware.</p>
                       <p>• Writing programs directly in machine language is extremely difficult and tedious for humans, as it requires knowing the exact binary codes for every operation.</p>
-                      <h5>• Example - In machine language, the binary code to add two numbers might look something like this:</h5>
-                      <pre>
-                        <code>10000011 00000010 00000011</code>
-                      </pre>
+                      <h5 id="exampleformatting">• Example - In machine language, the binary code to add two numbers might look something like this:</h5>
+                      <pre><div class="hljs-wrapper"><code>10000011 00000010 00000011</code>
+                        <span class="hljs-lang-label">BINARY</span></div></pre>
 
                       <p id="complicated">• This string of 1s and 0s would instruct the processor to add the values stored in two specific memory 
                         locations and store the result in another location.</p>
@@ -120,10 +119,12 @@
                           <p>• It's like having a "direct line" to the computer's brain, instead of going through all the layers of abstraction.</p>
                       <h5>• Example: Adding 2 and 3 in Assembly Language</h5>
                       <pre>
-                        <code>MOV AX, 2   # Move the value 2 into the AX register
+                        <div class="hljs-wrapper"><code>MOV AX, 2   # Move the value 2 into the AX register
 ADD AX, 3   # Add 3 to the value in the AX register
 # symbol is used to indicate a comment, which the assembler will ignore.</code>
-  </pre>
+<span class="hljs-lang-label">ASSEMBLY</span></div>
+</pre>
+
                       <p id="complicated">• In this example, the MOV instruction moves the value 2 into the AX register, 
                         and the ADD instruction adds the value 3 to the contents of the AX register. This example is an oversimplified 
                         version of actual assembly language writing. This is why high-level programming languages were made:</p>
@@ -139,9 +140,9 @@ ADD AX, 3   # Add 3 to the value in the AX register
                       <p>• High-level languages require a compiler or interpreter to translate the code into the machine-specific instructions the computer can execute directly.</p>
                     </div>
                       <h5>• Example: This is how adding 2 and 3 is written in Java, a high-level language:</h5>
-                      <pre id="java-add"><code class="language-java">int result = 2 + 3; // This adds 2 and 3 and stores the result in the variable 'result'
+                      <pre id="java-add"><div class="hljs-wrapper"><code class="language-java">int result = 2 + 3; // This adds 2 and 3 and stores the result in the variable 'result'
 System.out.println(result); // This displays the result to the user
-</code></pre>
+</code><span class="hljs-lang-label">JAVA</span></div></pre>
 
                       <h4>5. Translating Source Code to Machine Code</h4>
                       <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
@@ -405,88 +406,21 @@ System.out.println("The value of myVariable is: " + myVariable);
 
       <div id="topic4" style="display: none;">
         <div id="topic-wrapper">
-          <main class="table" id="tab">
+          <main class="tableframe" id="tab">
             <section class="table__header">
              <h1><i class="fa-solid fa-book"></i>#4 Installing Java/JDK on Your Device</h1>
             </section>
-            <section class="table__body">
+            <section class="table__bodyframe">
               <table>
                 <thead>
                 </thead>
-                  <div class="iframe-container">
-                   <iframe class="introiframe" src="https://www.youtube.com/embed/-C88r0niLQQ?list=PLBlnK6fEyqRjicb0pe9mrbrXZ36V7WkyJ" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="iframe-containerframe">
+                   <iframe class="introiframe" src="https://www.youtube.com/embed/r-cIq8LeqCo" title="Installing Java/JDK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                 </tbody>
               </table>
             </section>
           </main>
-
-
-          <main class="table2" id="tab">
-            <section class="table__header" id="table__header2">
-              <h1><i class="fa-solid fa-book"></i>Step-by-step: Installing Java/JDK on Your Device</h1>
-            </section>
-            <section class="table__body" id="table__body2">
-              <table>
-                <thead>
-                </thead>
-                  <div class="module-container">
-                    <div class="document-container">
-
-                    <h3 id="learnobj">Learning Objectives</h3>
-                    <p>After completing this lesson, you should be able to:</p>
-                    <p>1. Define what a program and programming language are.</p>
-                    <p>2. Understand the concept of machine language and its binary nature.</p>
-                    <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
-                    <p>4. Describe high-level programming languages and their advantages.</p>
-                    <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
-                    <h3>Lesson Content</h3>
-
-                    <h4>1. Introduction to Programs and Programming Languages</h4>
-                    <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
-                    <p>• Programs are used to interact and communicate with computers.</p>
-                    <p>• To write programs, we use programming languages.</p>
-                    <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
-
-                    <h4>2. Machine Language</h4>
-                    <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
-                    <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
-                    <p>• Machine language is machine-dependent, meaning it differs among different types of machines.</p>
-                    <p>• Example: This is how you add 2 and 3 (2+3) in machine language: <span>1010101010101010</span></p>
-
-                    <h4>3. Assembly Language</h4>
-                    <p>• Assembly language was developed to make programming easier compared to machine language.</p>
-                    <p>• It is also machine-dependent, but it uses keywords (e.g., <span>add</span>, <span>sub</span>) instead of binary codes.</p>
-                    <p>• Assembly code must be translated to machine code using a program called an assembler before execution.</p>
-                    <p>• Example: This is how you add 2 and 3 in assembly language: <span>add 2, 3, result  </span></p>
-
-                    <h4>4. High-Level Programming Languages</h4>
-                    <p>• High-level programming languages use English words and are easier to learn and use.</p>
-                    <p>• They are machine-independent, meaning programs can run on different machines.</p>
-                    <p>• Each instruction in a high-level language is called a statement.</p>
-                    <p>• A program written in a high-level language is called source code or a source program.</p>
-                    <p>• Example: This is how you add 2 and 3 in Java (a high-level language): <span>result = 2 + 3;</span></p>
-                    
-                    <h4>5. Translating Source Code to Machine Code</h4>
-                    <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
-                    <p>• It must be translated into machine code before execution.</p>
-                    <p>• This translation can be done using a compiler or an interpreter.</p>
-                    <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
-                    <p>• An interpreter translates and executes each statement of the source code one by one.</p>
-
-                    <h3 id="reviewquest">Review Questions</h3>
-                    <p>1. What is a program, and what is its purpose?</p>
-                    <p>2. Explain the difference between machine language, assembly language.</p>
-                    <p>3. What are the advantages of using high-level programming languages?</p>
-                    <p>4. Describe the roles of a compiler and an interpreter in translating source code to machine code. </p>
-                    </div>
-                  </div>
-                </tbody>
-              </table>
-            </section>
-            <main class="table" id="tab">
-        </div>
-      </div>
 
         <!---------------------- next ---------------------->
         <div id="runcode" style="display: none;">

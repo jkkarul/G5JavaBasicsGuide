@@ -264,6 +264,10 @@ i {
   place-items: center;
 }
 
+.profile:hover .profile-img {
+  cursor: pointer;
+}
+
 .about-info {
   width: 27ch;
   animation: typing 1.5s steps(27), blink .5s step-end infinite alternate;
@@ -401,7 +405,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 194rem;
+  height: 195rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -423,7 +427,7 @@ main.table2 {
 
 #table__body2{
   width: 98%;
-  height:96.05%;
+  height:96.1%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -523,7 +527,7 @@ thead > tr > th {
   top: 16px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 98%;
   border-radius: 0.8rem;
 }
 
@@ -600,6 +604,10 @@ thead > tr > th {
   margin-bottom: 33pt;
 }
 
+#exampleformatting {
+  margin-bottom: 15pt;
+}
+
 #complicated {
   margin-top: -15pt;
 }
@@ -660,7 +668,7 @@ main.table3 {
 
 main.table4 {
   width: 82vw;
-  height: 220rem;
+  height: 216rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -672,7 +680,7 @@ main.table4 {
 
 #table__body4{
   width: 98%;
-  height:95.2%;
+  height:96.5%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -689,6 +697,48 @@ main.table4 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* -------------------- topic-3 ----------------------*/
+
+main.tableframe {
+  width: 82vw;
+  height: 55.2rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.table__bodyframe {
+  width: 98%;
+  height:86.1%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+.iframe-containerframe {
+  position: relative;
+  width: 98%;
+  padding-bottom: 48.3%; 
+  overflow: hidden;
+  margin: 0 auto; 
+  border-radius: 0.8rem;
+}
+
+.iframe-containerframe iframe {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  border-radius: 0.8rem;
 }
 
 /* -------------------- tasks ----------------------*/
