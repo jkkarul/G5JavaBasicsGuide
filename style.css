@@ -331,40 +331,18 @@ i {
 
 main.table {
   width: 82vw;
-  height: 81vh;
+  height: 19.6rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
   overflow: hidden;
+  margin-top: 40px;
 }
 
-.table__header {
-  width: 100%;
-  height: 10%;
-  background-color: #171717;
-  padding: .5rem 0rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__header h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 38px;
-  text-align: center;
-  cursor: default;
-}
-
-h1 > i {
-  margin-right: 20px;
-  font-size: 45px;
-}
-
-.table__body {
+.table__body {  
   width: 98%;
-  height: 83.8%;
+  height:66%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -373,8 +351,152 @@ h1 > i {
   overflow: overlay;
 }
 
+.table__header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #171717;
+  padding: .5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.table2 {
+  width: 82vw;
+  height: 19.6rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#table__header2{
+  width: 100%;
+  height: 4rem;
+  background-color: #171717;
+  padding: .5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table__body2{
+  width: 98%;
+  height:66%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+main.table3 {
+  width: 82vw;
+  height: 19.6rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#table__header3{
+  width: 100%;
+  height: 4rem;
+  background-color: #171717;
+  padding: .5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table__body3{
+  width: 98%;
+  height:66%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+main.table4 {
+  width: 82vw;
+  height: 19.6rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#table__header4{
+  width: 100%;
+  height: 4rem;
+  background-color: #171717;
+  padding: .5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table__body4{
+  width: 98%;
+  height:66%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
+
+.table__header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+}
+
+.table__header2 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+}
+
+.table__header3 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+}
+
+.table__header4 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+}
+
+h1 > i {
+  margin-right: 20px;
+  font-size: 11px;
+}
+
 tr > th > i {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 table {
@@ -403,17 +525,88 @@ td {
   visibility: visible;
 }
 
-.clickable-row {
+.clickable-table {
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: filter 0.3s ease-in-out;
 }
 
-.clickable-row:hover {
-  background-color: #0005;
+.clickable-table:hover {
+  filter: blur(3px);
 }
 
 thead > tr > th {
   cursor: default;
+}
+
+.iframe-container {
+  position: relative;
+  width: 98%;
+  padding-bottom: 40.9%; 
+  overflow: hidden;
+  margin: 0 auto; 
+  border-radius: 0.8rem;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  border-radius: 0.8rem;
+}
+
+.module-container {
+  margin: 1.54cm;
+  border: 4px dashed #0f0f0f;
+  border-radius: 0.8rem;
+}
+
+.document-container {
+  margin-left: 3.384cm;
+  margin-right: 3.384cm;
+  margin-top: 1.84cm;
+  margin-bottom: 1.84cm;
+}
+
+.module-container p + h3 {
+  margin-top: 20pt;
+}
+
+.module-container h4 {
+  margin-bottom: 18pt;
+  margin-top: 20pt;
+}
+
+.module-container h5 {
+  font-size: 18px;
+  font-style: bold;
+  margin-top: 15pt;
+  margin-bottom: 2pt;
+}
+
+.module-container h3 {
+  font-size: 28px;
+  font-style: bold;
+  text-align: center;
+}
+
+.module-container p {
+  font-size: 18px;
+  margin-left: 20pt;
+  margin-bottom: 10pt;
+}
+
+.module-container h4 {
+  font-size: 21px;
+  font-style: bold;
+}
+
+.pcode {
+  color: #60adfa;
+  background-color: #0f0f0f;
+  border-radius: 0.5rem;
+  padding: 4px;
 }
 
 /* -------------------- tasks ----------------------*/
@@ -425,6 +618,49 @@ thead > tr > th {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+#table__body2 p > h2 {
+  margin-bottom: 20pt;
+}
+
+#learnobj {
+  margin-bottom: 33pt;
+}
+
+#lessoncont {
+  margin-top: 33pt;
+  margin-bottom: 33pt;
+}
+
+#reviewquest {
+  margin-top: 33pt;
+  margin-bottom: 33pt;
+}
+
+#exampleformatting {
+  margin-bottom: 15pt;
+}
+
+#complicated {
+  margin-top: -15pt;
+}
+
+#java-add {
+  margin-top: 20pt;
+}
+
+#assemblylang {
+  margin-top: -14pt;
+}
+
+#extrainfo {
+  margin-bottom: 28pt !important;
+}
+
+.pexample {
+  margin-left: 25pt;
+  margin-top: 2pt;
 }
 
 /* -------------------- java-compiler ----------------------*/
