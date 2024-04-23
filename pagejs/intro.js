@@ -102,54 +102,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// --------- hack-text-thingcool -----------
-const Alphapet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-document.querySelectorAll('li').forEach(li => {
-  const span = li.querySelector('span:not(i)');
-  if (span) {
-    // start\ animation on page load for the first span
-    if (span === document.querySelectorAll('li > a > span:not(i)')[0]) {
-      const finalText = span.dataset.value;
-      let iter = 0;
-      const inter = setInterval(() => {
-        span.innerText = finalText.split('')
-          .map((letter, index) => {
-            if (index < iter) {
-              return finalText[index];
-            }
-            return Alphapet[Math.floor(Math.random() * 26)];
-          })
-          .join('');
-
-        if (iter >= finalText.length) clearInterval(inter);
-
-        iter += 1 / 2;
-      }, 50);
-    }
-
-    // mouseover event listener for all spans
-    span.addEventListener('mouseover', (e) => {
-      const finalText = e.target.dataset.value;
-      let iter = 0;
-      const inter = setInterval(() => {
-        e.target.innerText = finalText.split('')
-          .map((letter, index) => {
-            if (index < iter) {
-              return finalText[index];
-            }
-            return Alphapet[Math.floor(Math.random() * 26)];
-          })
-          .join('');
-
-        if (iter >= finalText.length) clearInterval(inter);
-
-        iter += 1 / 2;
-      }, 50);
-    });
-  }
-});
-
 // codeblock copyable
 function copyCodeToClipboard(codeSnippetId) {
   const codeSnippetElement = document.getElementById(codeSnippetId);
