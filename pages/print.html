@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script src="https://kit.fontawesome.com/3ea5ea8213.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../pagecss/intro.css">
+    <link rel="stylesheet" href="../pagecss/print.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    </head>
+
     <body>
 
       <!---------------------- sidebar ---------------------->
@@ -22,22 +24,23 @@
             <div class="top"></div>
             <div class="bottom"></div>
           </div>
-          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span>Topic:</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>No. 1</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>No. 2</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span>No. 3</span></a></li>
-          <li><a href="javascript:void(0);"><i class="fa-solid fa-laptop-code"></i><span>Run Java Code</span></a></li>
-          <li><a href="intro.html"><i class="fa-regular fa-circle-left"></i><span>Back</span></a></li>
+          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span data-value="Chapter:">Chapter:</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #1">Lesson #1</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #2">Lesson #2</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #3">Lesson #3</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #4">Lesson #4</span></a></li>
+          <li><a href="print.html"><i class="fa-regular fa-circle-right"></i></i><span data-value="Next">Next</span></a></li>
+          <li><a href="../index.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
         </ul>
       </div>
-
-      <!---------------------- topic-title ---------------------->
+      
+      <!---------------------- topic-title/site-info ---------------------->
       <div class="main-content">
         <div id="info" style="display: none;">
           <div class="info-wrapper">
-            <div class="about-info">
-              <p>
-                Topic: Get Started <i class="fa-solid fa-circle-play"></i>
+            <div id="aboutinfo" class="about-info">
+              <p class="site-info-text" data-value="Topic #1: Get Started">
+                Chapter #2: Print Function <i class="fa-solid fa-print"></i>
               </p>
             </div>
           </div>
@@ -46,39 +49,46 @@
         <!---------------------- topic-1 ---------------------->
         <div id="topics" style="display: none;">
           <div id="topic-wrapper">
-            <main class="table">
+            <main class="table" id="tab">
               <section class="table__header">
-                <h1><i class="fa-solid fa-code"></i>Java Basics Guide: #1 Introduction to Programming</h1>
+               <h1><i class="fa-solid fa-book"></i>#1: How to Run Java Code</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
-                    <tr>
-                      <th> </th>
-                      <th> # </th>
-                      <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
-                      <th> Description </th>
-                    </tr>
                   </thead>
-                  <tbody>
-                    <tr class="clickable-row" data-href="pages/intro1.html">
-                      <td></td>
-                      <td> 1 </td>
-                      <td> Introduction to Programming </td>
-                      <td> An introduction on programs and programming </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro2.html">
-                      <td></td>
-                      <td> 2 </td>
-                      <td> Introduction to Java </td>
-                      <td> An introduction on the Java programming language. </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro3.html">
-                      <td></td>
-                      <td> 3 </td>
-                      <td> Installing Java / JDK </td>
-                      <td> A step-by-step guide on how to install Java on your device. </td>
-                    </tr>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/0sdcey42zJ4" title="Programs and Programming Languages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Copy Code: </h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                          <div class="hljs-wrapper"><code id="code-snippet-1">public class Main {
+public static void main(String[] args) {
+                            
+System.out.println("Hello, World!");
+                            
+int myVariable = 42;
+                            
+System.out.println("The value of myVariable is: " + myVariable);
+  }
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
                   </tbody>
                 </table>
               </section>
@@ -86,106 +96,274 @@
           </div>
         </div>
 
-        <!---------------------- topic-2 listen to notes too lazy to change the actual thong ---------------------->
+        <!---------------------- topic-2 listen to notes, didnt change classes ---------------------->
         <div id="tasks" style="display: none;">
           <div id="topic-wrapper">
-            <main class="table">
+            <main class="table" id="tab">
               <section class="table__header">
-                <h1 id="topic2"><i class="fa-solid fa-code"></i>Java Basics Guide: #2 Introduction to Java</h1>
+              <h1><i class="fa-solid fa-book"></i>#2: Introduction to the Print Function</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
-                    <tr>
-                      <th> </th>
-                      <th> # </th>
-                      <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
-                      <th> Description </th>
-                    </tr>
                   </thead>
-                  <tbody>
-                    <tr class="clickable-row" data-href="pages/intro1.html">
-                      <td></td>
-                      <td> 1 </td>
-                      <td> Introduction to Programming </td>
-                      <td> An introduction on programs and programming </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro2.html">
-                      <td></td>
-                      <td> 2 </td>
-                      <td> Introduction to Java </td>
-                      <td> An introduction on the Java programming language. </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro3.html">
-                      <td></td>
-                      <td> 3 </td>
-                      <td> Installing Java / JDK </td>
-                      <td> A step-by-step guide on how to install Java on your device. </td>
-                    </tr>
+                    <div class="iframe-container">
+                      <iframe class="introiframe" src="https://www.youtube.com/embed/GkHm-rP15fs" title="Introduction to Java and Java Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                   </tbody>
                 </table>
               </section>
             </main>
+
+
+            <main class="table3" id="tab">
+              <section class="table__header" id="table__header3">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body3">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <h4>After completing this lesson, you should be able to:</h4>
+                      <p>1. Understand the general information about Java and its development.</p>
+                      <p>2. Explain the Java Language Specification and its syntax and semantics.</p>
+                      <p>3. Define what an API (Application Programming Interface) is and its purpose.</p>
+                      <p>4. Understand the components of the Java Development Kit (JDK) and their roles.</p>
+                      <p>5. Identify what an Integrated Development Environment (IDE) is and its features.</p>
+
+                      <h3 id="lessoncont">Lesson Content</h3>
+                      <h4>1. General Information about Java</h4>
+                      <p>• Java was developed at Sun Microsystems (acquired by Oracle in 2010).</p>
+                      <p>• It is a general-purpose and powerful programming language.</p>
+                      <p>• Java is used for developing software that runs on mobile, desktop, and server platforms.</p>
+                      <p>• Java is machine-independent, meaning programs can run on different machines.</p>
+                      <p>• Java is an object-oriented language, allowing code to be organized into reusable components called objects.</p>
+                      <p>• Java requires variables to be declared with a specific data type (e.g., int, double, String) before they can be used.</p>
+
+                      <h4>2. Java Language Specification</h4>
+                      <p>• The Java Language Specification defines the syntax and semantics of Java.</p>
+                      <p>• Syntax refers to the grammar rules for writing valid Java code.</p>
+                      <p>• Semantics refers to the meaning and behavior of Java code.</p>
+                      <p>• Syntax errors occur when code violates the grammar rules.</p>
+                      <p>• Semantic errors occur when code is grammatically correct but lacks meaning.</p>
+
+                      <h4>3. Application Programming Interfaces (APIs)</h4>
+                      <p>• An API, or library, contains predefined Java code that developers can use.</p>
+                      <p>• APIs provide ready-to-use code, making development faster and easier.</p>
+                      <p>• Developers don't have to write everything from scratch.</p>
+                      <p>• In addition to the core Java APIs, there are many third-party APIs available for various 
+                        purposes, such as graphics, networking, databases, and more.</p>
+                      <p>• Popular third-party APIs include Swing and JavaFX (for GUI development), Apache Commons, and Spring Framework.</p>
+                      <p>• These APIs (Application Programming Interfaces) are pre-built code libraries that allow different software programs to interact and 
+                        share functionality with each other in a standardized way.</p>
+
+                      <h4>4. Editions of Java</h4>
+                      <p>• Java Standard Edition (Java SE): Used for developing desktop applications.</p>
+                      <p>• Java Enterprise Edition (Java EE): Used for developing server-side applications.</p>
+                      <p>• Java Micro Edition (Java ME): Used for developing mobile applications.</p>
+                      <p>• Java SE is the foundation for all other editions.</p>
+                      
+                      <h4>5. Java Development Kit (JDK)</h4>
+                      <p>• The JDK is a set of programs that enable Java development.</p>
+                      <p>• It includes the Java Runtime Environment (JRE) for running Java programs.</p>
+                      <p>• Both JDK and JRE contain the Java Virtual Machine (JVM).</p>
+                      <p>• The Java Virtual Machine (JVM) provides a consistent software environment that runs Java programs, 
+                        abstracting away the differences between various hardware architectures and operating systems.</p>
+                      <p>This allows Java programs to be portable and run on different machines without needing to be recompiled or modified specifically for each platform.</p>
+
+                      <h4>6. Integrated Development Environment (IDE)</h4>
+                      <p>• An IDE is a program that provides an environment for writing, compiling, building, and running Java programs.</p>
+                      <p>• IDEs typically include tools for debugging and finding errors.</p>
+                      <p>• Popular Java IDEs include NetBeans, Eclipse, IntelliJ IDEA, Android Studio (for Android app development), and Visual Studio Code (Personal Favorite).</p>
+
+                      <h3 id="reviewquest">Review Questions</h3>
+                      <p>1. What is the purpose of the Java Language Specification?</p>
+                      <p>2. Explain the difference between syntax and semantics errors in Java.</p>
+                      <p>3. Why are APIs (libraries) useful in Java development?</p>
+                      <p>4. What are the different editions of Java, and what are their use cases?</p>
+                      <p>5. Describe the roles of JDK, JRE, and JVM in Java development.</p>
+                      <p>6. What are the main features and benefits of using an Integrated Development Environment (IDE)?</p>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
           </div>
         </div>
-
-        <!---------------------- runcode ---------------------->
-        <div id="runcode" style="display: none;">
-          <div class="runcode-wrapper">
-            <iframe src="https://www.online-java.com/" title="Embedded Page" style="border: none;" scrolling="no"></iframe>
-          </div>
-        </div>
-
+         
         <!---------------------- topic-3 ---------------------->
         <div id="generator" style="display: none;">
-          <div class="generator-wrapper">
-            <main class="table">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
               <section class="table__header">
-                <h1 id="topic3"><i class="fa-solid fa-code"></i>Java Basics Guide: #3 Installing Java / JDK</h1>
+               <h1><i class="fa-solid fa-book"></i>#3: What You Can Do With the Print Function</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
-                    <tr>
-                      <th> </th>
-                      <th> # </th>
-                      <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
-                      <th> Description </th>
-                    </tr>
                   </thead>
-                  <tbody>
-                    <tr class="clickable-row" data-href="pages/intro1.html">
-                      <td></td>
-                      <td> 1 </td>
-                      <td> Introduction to Programming </td>
-                      <td> An introduction on programs and programming </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro2.html">
-                      <td></td>
-                      <td> 2 </td>
-                      <td> Introduction to Java </td>
-                      <td> An introduction on the Java programming language. </td>
-                    </tr>
-                    <tr class="clickable-row" data-href="pages/intro3.html">
-                      <td></td>
-                      <td> 3 </td>
-                      <td> Installing Java / JDK </td>
-                      <td> A step-by-step guide on how to install Java on your device. </td>
-                    </tr>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/q9xRVf0yPyY" title="Anatomy of a Java Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                   </tbody>
                 </table>
               </section>
             </main>
+
+
+            <main class="table4" id="tab">
+              <section class="table__header" id="table__header4">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body4">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <p>After completing this lesson, you should be able to:</p>
+                      <p>1. Understand the concepts of classes and objects in Java.</p>
+                      <p>2. Identify the structure of a Java class and its components.</p>
+                      <p>3. Explain the purpose and structure of methods in Java.</p>
+                      <p>4. Recognize the importance and structure of the main method as the entry point for program execution.</p>
+                      <p>5. Apply naming conventions for classes, methods, and variables in Java.</p>
+                      <p>6. Describe the structure of a basic Java program, including the use of packages, access modifiers, and comments.</p>
+                      <p>7. Understand the concepts of variables and data types in Java.</p>
+                      <h3 id="lessoncont">Lesson Content</h3>
+
+                      <h4>1. Classes and Objects</h4>
+                      <p>• A class is a blueprint for creating objects.</p>
+                      <p>• An object is an instance of a class.</p>
+                      <p>• Example: A car factory (class) produces individual cars (objects).</p>
+
+                      <h4>2. Java Class Structure</h4>
+                      <p>• Classes are defined using the <span class="pcode">class</span> keyword, followed by the class name and a pair of braces <span class="pcode">{}</span>.</p>
+                      <p>• The code for the class is written inside the braces.</p>
+                      <h5>• Example:</h5>
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-1">public class MyClass {
+// code goes here
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>3. Methods</h4>
+                      <p>• A method is a group of instructions that perform a specific task.</p>
+                      <p>• Examples: adding two numbers -> printing a greeting -> getting user input.</p>
+                      <p>• Methods are defined with a return type, name, parameters, and a body (code block).</p>
+                      <h5>• Example:</h5>
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-2">public int addNumbers(int a, int b) {
+return a + b;
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-2')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>  
+
+                      <h4>4. The main Method</h4>
+                      <p>• The <span class="pcode">main</span> method is a special method automatically called when a Java program is run.</p>
+                      <p>• It is the starting point of execution for a Java program, and every Java program must have a <span class="pcode">main</span> method.</p>
+                      <p>• The <span class="pcode">main</span> method serves as the entry point for the program, where the execution begins.</p>
+                      <h5>• Example:</h5>
+
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-3">public static void main(String[] args) {
+// program code goes here
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-3')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      <h4>5. Naming Conventions</h4>
+                      <p>• PascalCase: Used for naming classes (e.g., <span class="pcode">MyClas</span>).</p>
+                      <p>• camelCase: Used for naming methods and variables (e.g., <span class="pcode">myMethod</span>, <span class="pcode">myVariable</span>).</p>
+                      <p>• snake_case: Used for naming constants (e.g., <span class="pcode">MY_CONSTANT</span>).</p>
+                      <p>• The use of different naming conventions (PascalCase for classes, camelCase for methods and variables, snake_case for constants) in Java aids code readability, 
+                        maintainability, and adheres to widely accepted standards and best practices.</p>
+
+                      <h4>6. Java Program Structure</h4>
+                      <p>• A Java program consists of at least one class.</p>
+                      <p>• The main method is defined inside a class.</p>
+                      <p>• The program code is written inside the main method's body.</p>
+                      <p>• Comments play an important role in documenting and explaining the code, making it easier to understand and maintain.</p>
+                      <p>• Variables are used to store data in a Java program.</p>
+                      <p>• Java has a variety of data types, such as int (integers), double (floating-point numbers), boolean (true/false), and String (text).</p>
+                      <p>• Variables are declared with a data type and a unique name, and their values can be assigned, read, and updated throughout the program.</p>
+                      <h5>• Example of a Java program with each line explained:</h5>
+
+                      <pre>
+                        <div class="hljs-wrapper"><code id="code-snippet-4">// The class declaration starts with the 'class' keyword
+// The class name should be a descriptive, meaningful name
+// In Java, class names are usually written in PascalCase
+// The class name should also be the same name as your file name
+public class Main {
+                          
+// The 'main' method is the entry point of the program
+// The 'public' access modifier makes the method accessible from outside the class
+// The 'static' keyword means the method can be called without creating an instance of the class
+// The 'void' return type means the method doesn't return any value
+public static void main(String[] args) {
+                          
+// Print a message to the console
+// The 'System.out.println()' method is used to output text
+System.out.println("Hello, World!");
+                          
+// Declare a variable to store an integer value
+// Variable names should be descriptive and use camelCase
+int myVariable = 42;
+                          
+// Print the value of the variable
+System.out.println("The value of myVariable is: " + myVariable);
+  }
+}
+// You can copy this code on the top right and try it in the "Run Java Code" tab</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-4')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      <h3 id="reviewquest">Review Questions</h3>
+                      <p>1. What is the difference between a class and an object?</p>
+                      <p>2.	Describe the structure of a Java class.</p>
+                      <p>3.	Explain the purpose and structure of a method in Java</p>
+                      <p>4.	Why is the main method important in a Java program?</p>
+                      <p>5.	Give examples of naming conventions used in Java for classes, methods, and variables.</p>
+                      <p>6.	What are the essential components of a basic Java program?</p>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+              <main class="table" id="tab">
           </div>
         </div>
+
+      <!---------------------- topic-4 ---------------------->
+
+      <div id="topic4" style="display: none;">
+        <div id="topic-wrapper">
+          <main class="tableframe" id="tab">
+            <section class="table__header">
+             <h1><i class="fa-solid fa-book"></i>#4 Installing Java/JDK on Your Device</h1>
+            </section>
+            <section class="table__bodyframe">
+              <table>
+                <thead>
+                </thead>
+                  <div class="iframe-containerframe">
+                   <iframe class="introiframe" src="https://www.youtube.com/embed/r-cIq8LeqCo" title="Installing Java/JDK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </tbody>
+              </table>
+            </section>
+          </main>
+
+        <!---------------------- next ---------------------->
+        <div id="runcode" style="display: none;">
+         <div class="runcode-wrapper"></div>
+       </div>
 
         <!---------------------- back ---------------------->
         <div id="credits" style="display: none;">
-          <div class="credits-wrapper">
-          </div>
+          <div class="credits-wrapper"></div>
         </div>
-      </div>
+
       <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
       <script src="../pagejs/print.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>   
+      <script>hljs.highlightAll();</script>
     </body>
 </html>
