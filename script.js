@@ -68,21 +68,9 @@ $(document).ready(function() {
 });
 // --------- clickable-row -----------
 
-document.addEventListener("DOMContentLoaded", function() {
-  var rows = document.querySelectorAll(".clickable-row");
-  rows.forEach(function(row) {
-    row.addEventListener("mousedown", function(event) {
-      var href = row.getAttribute("data-href");
-      if (href && event.button === 1) { // middle-click
-        window.open(href, '_blank');
-      }
-    });
-    row.addEventListener("click", function(event) {
-      var href = row.getAttribute("data-href");
-      if (href && event.button !== 1) { // not middle-click
-        window.location.href = href;
-      }
-    });
+document.querySelectorAll('.clickable-row').forEach(row => {
+  row.addEventListener('click', () => {
+    window.location.href = row.querySelector('table').dataset.href;
   });
 });
 
