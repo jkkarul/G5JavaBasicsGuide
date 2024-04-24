@@ -72,24 +72,19 @@ $(document).ready(function() {
 
 // --------- clickable-row -----------
 
-document.addEventListener("DOMContentLoaded", function() {
-  var rows = document.querySelectorAll(".clickable-row");
-  rows.forEach(function(row) {
-    row.addEventListener("mousedown", function(event) {
-      var href = row.getAttribute("data-href");
-      if (href && event.button === 1) { // middle-click
-        window.open(href, '_blank');
-      }
-    });
-    row.addEventListener("click", function(event) {
-      var href = row.getAttribute("data-href");
-      if (href && event.button !== 1) { // not middle-click
-        window.location.href = href;
-      }
-    });
+// Get all the clickable rows
+const clickableRows = document.querySelectorAll('.clickable-row');
+
+// Add a click event listener to each clickable row
+clickableRows.forEach(row => {
+  row.addEventListener('click', () => {
+    // Get the data-href attribute value
+    const href = row.getAttribute('data-href');
+
+    // Redirect the user to the corresponding page
+    window.location.href = href;
   });
 });
-
 // --------- back-to-index -----------
 
 document.addEventListener("DOMContentLoaded", function() {

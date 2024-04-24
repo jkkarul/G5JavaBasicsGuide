@@ -96,7 +96,7 @@
                   <h1><i class="fa-solid fa-book"></i>Chapter #2: The Basics </h1>
                  </section>
                 <section class="table__body clickable-table clickable-row" id="table__body2">
-                  <table data-href="pages/intro.html">
+                  <table data-href="pages/print.html">
                     <thead>
                       <tr>
                         <th> </th>
@@ -129,31 +129,31 @@
                 </section>
               </main>
 
-              <main class="table3" id="tab">
-                <section class="table__header" id="table__header3">
-                  <h1><i class="fa-solid fa-book"></i>Chapter #3:</h1>
-                 </section>
-                <section class="table__body" id="table__body3">
-                  <table class="clickable-table clickable-row" data-href="pages/intro.html">
+              <main class="table2" id="tab">
+                <section class="table__header" id="table__header2">
+                  <h1><i class="fa-solid fa-book"></i>Chapter #2: The Basics</h1>
+                </section>
+                <section class="table__body clickable-table clickable-row" id="table__body2">
+                  <table data-href="pages/print.html">
                     <thead>
                       <tr>
                         <th> </th>
                         <th> # </th>
-                        <th> Topic: Get Started <i class="fa-solid fa-circle-play"></i> </th>
-                        <th> Description </th>
+                        <th> Chapter Lessons: <i class="fa-solid fa-circle-play"></i></th>
+                        <th> Description: </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td></td>
                         <td> 1 </td>
-                        <td> Programs and Programming Languages </td>
+                        <td> Running Java Code </td>
                         <td> An introduction on programs and programming </td>
                       </tr>
                       <tr>
                         <td></td>
                         <td> 2 </td>
-                        <td> Introduction to Java Programming </td>
+                        <td> Printing Words and Numbers </td>
                         <td> An introduction on the Java programming language. </td>
                       </tr>
                       <tr>
@@ -166,6 +166,14 @@
                   </table>
                 </section>
               </main>
+              
+              <script>
+                document.querySelectorAll('.clickable-row').forEach(row => {
+                  row.addEventListener('click', () => {
+                    window.location.href = row.querySelector('table').dataset.href;
+                  });
+                });
+              </script>
               
               <main class="table4" id="tab">
                 <section class="table__header" id="table__header4">
