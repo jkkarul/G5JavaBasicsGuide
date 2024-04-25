@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>G5RSCH | Topic: Get Started </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../pagecss/math.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    </head>
+
+    <body>
+
+      <!---------------------- sidebar ---------------------->
+      <div id="accordian">
+        <div class="profile" data-href="../index.html">
+          <div class="profile-img bg-img" style="background-image: url(../img/java.png)"></div>
+        </div>
+        <ul class="show-dropdown main-navbar">
+          <div class="selector-active">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span data-value="Chapter:">Chapter:</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #1">Lesson #1</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #2">Lesson #2</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #3">Lesson #3</span></a></li>
+          <li><a href="print.html"><i class="fa-regular fa-circle-right"></i></i><span data-value="Next">Next</span></a></li>
+          <li><a href="intro.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
+        </ul>
+      </div>
+      
+      <!---------------------- topic-title/site-info ---------------------->
+      <div class="main-content">
+        <div id="info" style="display: none;">
+          <div class="info-wrapper">
+            <div id="aboutinfo" class="about-info">
+              <p class="site-info-text" data-value="Topic #1: Get Started">
+                Chapter #2: The Java Basics <i class="fa-solid fa-circle-info"></i></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------- topic-1 ---------------------->
+        <div id="topics" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+               <h1><i class="fa-solid fa-book"></i>#1: Running Java VSCode IDE & The ComLab Way</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/zzG0IWjz6yk" title="Running Java Code in Visual Studio Code &amp; ComLab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Copy Code: </h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                          <div class="hljs-wrapper"><code id="code-snippet-1">public class Main {
+
+    public static void main(String[] args) {
+                            
+        System.out.println("Hello, World!");
+                            
+        int myVariable = 42;
+                            
+        System.out.println("The value of myVariable is: " + myVariable);
+
+    }
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <!---------------------- topic-2 listen to notes, didnt change classes ---------------------->
+        <div id="tasks" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+              <h1><i class="fa-solid fa-book"></i>#2: Java Variables and Data Types</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                      <iframe class="introiframe" src="https://www.youtube.com/embed/HejNvH-jd7w" title="Java Variables and Data Types" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table2p1" id="tab2">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Code in The Video: </h1>
+              </section>
+              <section class="table__body" id="table__body2p1">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                          <div class="hljs-wrapper"><code id="code-snippet-2">public class Main {
+
+  public static void main(String[] args) {
+
+      int x = 123;
+      double y = 3.14;
+      boolean z = true;
+      char symbol = '@';
+      String name = "Bro";
+
+      System.out.println("Hello " + name);
+
+    }
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-2')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table3" id="tab">
+              <section class="table__header" id="table__header3">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body3">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <h4>After completing this lesson, you should be able to:</h4>
+                      <p>1. Define variables and understand their purpose in programming.</p>
+                      <p>2. Differentiate between primitive and reference data types in Java.</p>
+                      <p>3. Identify and describe the eight primitive data types and the String data type.</p>
+                      <p>4. Declare, assign, and initialize variables in Java.</p>
+                      <p>5. Understand the conventions for naming variables and assigning values to different data types.</p>
+                      <p>6. Perform basic operations with variables, such as printing their values and string concatenation.</p>
+
+                      <h3 id="lessoncont">Lesson Content</h3>
+                      <h4>1. Introduction to Variables</h4>
+                      <p>• A variable is a placeholder for a value.</p>
+                      <p>• Variables behave as the value they contain.</p>
+                      <p>• Variables allow storing different types of data, including numbers, words, 
+                        sentences, and Boolean values.</p>
+
+                      <h4>2. Primitive vs. Reference Data Types</h4>
+                      <p>• Primitive data types: boolean, byte, short, int, long, float, double, char.</p>
+                      <p id="secondlist">• Store data directly.</p>
+                      <p id="secondlist">• Can hold only one value.</p>
+                      <p id="secondlist">• Uses less memory.</p>
+                      <p id="secondlist">• Faster.</p>
+                      <p>• Reference data types (e.g., String)</p>
+                      <p id="secondlist">• Unlimited (user defined).</p>
+                      <p id="secondlist">• Store an address.</p>
+                      <p id="secondlist">• Can hold multiple values.</p>
+                      <p id="secondlist">• Uses more memory.</p>
+                      <p id="secondlist">• Slower.</p>
+                      
+                      <h4>3. Primitive Data Types</h4>
+                      <p>• boolean: 1 bit, holds true or false:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">boolean isTrue = true;
+boolean isFalse = false;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• byte: 1 byte, holds integers between -128 and 127:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">byte age = 25;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• short: 2 bytes, holds integers between -32,768 and 32,767:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">short count = 500;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• int: 4 bytes, holds integers between -2,147,483,648 and 2,147,483,647:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int population = 1000000;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• long: 8 bytes, holds very large integers (e.g., -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">long distanceToMars = 54600000L; // Note the 'L' suffix</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• float: 4 bytes, holds fractional numbers up to 6-7 decimal digits (must end with 'f'):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">float pi = 3.14159f;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• double: 8 bytes, holds fractional numbers up to 15 decimal digits:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">double gravity = 9.80665;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• char: 2 bytes, holds a single character (must be enclosed in single quotes):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">char letter = 'A';</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>4. Reference Data Type: String</h4>
+                      <p>• Reference data type.</p>
+                      <p>• Stores a sequence of characters (word or sentence).</p>
+                      <p>• Size varies based on the string length.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String name = "John Doe";
+String message = "Hello, World!";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+                      
+                      <h4>5. Declaring, Assigning, and Initializing Variables.</h4>
+                      <p>• Declaration: specifying the data type and variable name (e.g., <span class="pcode">int x;</span>).</p>
+                      <p>• Assignment: assigning a value to a variable (e.g., <span class="pcode">x = 123;</span>).</p>
+                      <p>• Initialization: combining declaration and assignment (e.g., <span class="pcode">int x = 123;</span>).</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int x; // Declaration
+x = 123; // Assignment
+int y = 456; // Initialization</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>6. Naming Conventions and Value Assignment</h4>
+                      <p>• Follow camelCase for variable names (e.g., <span class="pcode">myVariable</span>).</p>
+                      <p>• Use appropriate data types for the values you want to store.</p>
+                      <p>• Enclose string values in double quotes.</p>
+                      <p>• Follow conventions for assigning values (e.g., floats end with 'f', longs end with 'L').</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int age = 25;
+double decimalOne = 22.5;
+double decimalTwo = 44.3;
+long population = 7900000000L;
+String name = "Cottonfields";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>7. Working with Variables</h4>
+                      <p>• Print variable values to the console:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println(age); // Output: 25
+System.out.println(name); // Output: Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p style="margin-top: -7px;">• Perform string combination using the + operator:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String greeting = "Hello, " + name; // Output: Hello, Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p style="margin-top: -7px;">• Variables behave as the value they contain and can be used in calculations and operations:</p>
+<pre><div class="hljs-wrapper"><code id="code-snippet-1">int sum = age + 10; // sum = 35
+double area = decimalOne * decimalTwo; // product = 996.7</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+
+                      <h3 id="reviewquest"> <i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #3<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+          </div>
+        </div>
+         
+        <!---------------------- topic-3 ---------------------->
+        <div id="generator" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+               <h1><i class="fa-solid fa-book"></i>#3: Accepting User Input in Java</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/HEUO7VkCK1A" title="Accepting User in Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+
+            <main class="table4" id="tab">
+              <section class="table__header" id="table__header4">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body4">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <p>After completing this lesson, you should be able to:</p>
+                      <p>1. Understand the purpose and usage of the Scanner class in Java.</p>
+                      <p>2. Import the required packages for using the Scanner class.</p>
+                      <p>3. Create a Scanner object and associate it with System.in for user input.</p>
+                      <p>4. Prompt the user for input and accept different data types (e.g., String, int) using the Scanner class.</p>
+                      <p>5. Handle input mismatch exceptions when the user enters an incorrect data type.</p>
+                      <p>6. Understand and resolve the issue of nextLine() method skipping user input after using other input methods.</p>
+                      <h3 id="lessoncont">Lesson Content</h3>
+
+                      <h4>1. Introduction to the Scanner Class</h4>
+                      <p>• The Scanner class in Java is used to obtain input from various sources, such as the console, files, or strings.</p>
+                      <p>• It is part of the <span class="pcode">java.util</span> package, which needs to be imported before using the Scanner class.</p>
+                      <p>• To import the Scanner class, add the following line at the top of your Java file:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">import java.util.Scanner;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>2. Creating a Scanner Object</h4>
+                      <p>• To create a Scanner object associated with the console input, use the following code:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">Scanner scanner = new Scanner(System.in);</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• <span class="pcode">System.in</span> represents the standard input stream, which is typically the console or command-line input.</p>
+
+                      <h4>3. Accepting User Input</h4>
+                      <p>• Use the appropriate methods of the Scanner class to accept user input of different data types.</p>
+                      <p>• To accept a line of text (String), use the <span class="pcode">nextLine()</span> method:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println("What is your name?");
+String name = scanner.nextLine();</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+                      <p style="margin-top: 15px; margin-bottom: 14px;">• To accept an integer value, use the <span class="pcode">nextInt()</span> method:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println("How old are you?");
+int age = scanner.nextInt();</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>4. Handling Input Mismatch Exceptions</h4>
+                      <p>• If the user enters an incorrect data type (e.g., a string when an integer is expected), Java will throw an</p><p style="margin-top: -5px;"><span class="pcode">InputMismatchException</span>.</p>
+                      <p>• To handle this exception, you can use try-catch blocks, but those are too complicated for beginners right now so just make sure to type in the corect data type of the input the program is looking for.</p>
+
+                      <h4>5. Resolving the <span class="pcode">nextLine()</span> Skipping Issue</h4>
+                      <p>• When using <span class="pcode">nextInt()</span> or other input methods that don't read the new line character, the subsequent <span class="pcode">nextLine()</span> method may skip the user input.</p>
+                      <p>• To resolve this issue, call <span class="pcode">scanner.nextLine()</span> after using <span class="pcode">nextInt()</span> or similar methods to clear the input buffer:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println("How old are you?");
+int age = scanner.nextInt();
+scanner.nextLine(); // Clear the input buffer</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>6. Example Usage With Each Line Explained</h4>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">   // Import the Scanner class from the java.util package
+import java.util.Scanner; 
+
+            // Define a class named "UserInput"
+        public class UserInput { 
+                      
+            // The main method is the entry point of the program
+        public static void main(String[] args) { 
+
+            // Create a new Scanner object named "scanner" associated with System.in (console input)
+        Scanner scanner = new Scanner(System.in); 
+
+            // Print a prompt asking for the user's name                    
+        System.out.println("What is your name?"); 
+
+            // Read the user's input as a string and store it in the "name" variable
+        String name = scanner.nextLine(); 
+                        
+            // Print a prompt asking for the user's age 
+        System.out.println("How old are you?"); 
+
+            // Read the user's input as an integer and store it in the "age" variable
+        int age = scanner.nextInt(); 
+
+            // Clear the input buffer to avoid skipping the next user input
+        scanner.nextLine(); 
+                        
+            // Print a prompt asking for the user's favorite food
+        System.out.println("What is your favorite food?"); 
+
+            // Read the user's input as a string and store it in the "food" variable
+        String food = scanner.nextLine(); 
+                        
+            // Print out a formatted message displaying the entered information
+        System.out.println("Hello, " + name + ", you are " + age + " years old."); 
+        System.out.println("You like " + food + ".");
+
+    }
+}
+// You can copy this code on the top right and run it yourself to see how it works</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                        <h3 id="reviewquest" style="margin-bottom: -35px;"><a href="../index.html"><i class="fa-solid fa-computer-mouse" style="margin-right: 12px;"></i>Proceed to Chapter #2 Review (HomePage)<i class="fa-solid fa-computer-mouse" style="margin-left: 12px;"></i></a><br><br>
+                      
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+              <main class="table" id="tab">
+          </div>
+        </div>
+
+      <!---------------------- topic-4 ---------------------->
+
+      <div id="topic4" style="display: none;">
+        <div id="topic-wrapper">
+          <main class="tableframe" id="tab">
+            <section class="table__header">
+             <h1><i class="fa-solid fa-book"></i>#4 Installing Java/JDK on Your Device</h1>
+            </section>
+            <section class="table__bodyframe">
+              <table>
+                <thead>
+                </thead>
+                  <div class="iframe-containerframe">
+                   <iframe class="introiframe" src="https://www.youtube.com/embed/r-cIq8LeqCo" title="Installing Java/JDK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </tbody>
+              </table>
+            </section>
+          </main>
+
+        <!---------------------- next ---------------------->
+        <div id="runcode" style="display: none;">
+         <div class="runcode-wrapper"></div>
+       </div>
+
+        <!---------------------- back ---------------------->
+        <div id="credits" style="display: none;">
+          <div class="credits-wrapper"></div>
+        </div>
+
+      <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+      <script src="../pagejs/math.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>   
+      <script>hljs.highlightAll();</script>
+    </body>
+</html>
