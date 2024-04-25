@@ -270,8 +270,8 @@ i {
 }
 
 .about-info {
-  width: 25ch;
-  animation: typing 1.5s steps(25), blink .5s step-end infinite alternate;
+  width: 30ch;
+  animation: typing 1.5s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -708,7 +708,7 @@ main.table2p1 {
 
 main.table4 {
   width: 82vw;
-  height: 216rem;
+  height: 190.8rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -720,7 +720,7 @@ main.table4 {
 
 #table__body4{
   width: 98%;
-  height:96.5%;
+  height:96%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -739,7 +739,12 @@ main.table4 {
   justify-content: center;
 }
 
-/* -------------------- topic-3 ----------------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------- topic-4 ----------------------*/
 
 main.tableframe {
   width: 82vw;

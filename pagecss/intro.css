@@ -269,19 +269,19 @@ i {
 }
 
 .about-info {
-  width: 26ch;
-  animation: typing 1.5s steps(26), blink .5s step-end infinite alternate;
+  width: 42ch;
+  animation: typing 1.5s steps(42), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 76px; 
+  font-size: 60px; 
   text-align: center;
   cursor: default;
 }
 
 .site-info-text > i {
-  font-size: 68px;
+  font-size: 53px;
 }
 
 @media (max-width: 1800px) {
@@ -671,7 +671,7 @@ main.table3 {
 
 main.table4 {
   width: 82vw;
-  height: 205.9rem;
+  height: 207.5rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -702,7 +702,7 @@ main.table4 {
   justify-content: center;
 }
 
-/* -------------------- topic-3 ----------------------*/
+/* -------------------- topic-4 ----------------------*/
 
 main.tableframe {
   width: 82vw;
