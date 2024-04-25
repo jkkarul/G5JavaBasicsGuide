@@ -162,64 +162,106 @@
                       <div class="document-container">
                       <h3 id="learnobj">Learning Objectives</h3>
                       <h4>After completing this lesson, you should be able to:</h4>
-                      <p>1. Understand the general information about Java and its development.</p>
-                      <p>2. Explain the Java Language Specification and its syntax and semantics.</p>
-                      <p>3. Define what an API (Application Programming Interface) is and its purpose.</p>
-                      <p>4. Understand the components of the Java Development Kit (JDK) and their roles.</p>
-                      <p>5. Identify what an Integrated Development Environment (IDE) is and its features.</p>
+                      <p>1. Define variables and understand their purpose in programming.</p>
+                      <p>2. Differentiate between primitive and reference data types in Java.</p>
+                      <p>3. Identify and describe the eight primitive data types and the String data type.</p>
+                      <p>4. Declare, assign, and initialize variables in Java.</p>
+                      <p>5. Understand the conventions for naming variables and assigning values to different data types.</p>
+                      <p>6. Perform basic operations with variables, such as printing their values and string concatenation.</p>
 
                       <h3 id="lessoncont">Lesson Content</h3>
-                      <h4>1. General Information about Java</h4>
-                      <p>• Java was developed at Sun Microsystems (acquired by Oracle in 2010).</p>
-                      <p>• It is a general-purpose and powerful programming language.</p>
-                      <p>• Java is used for developing software that runs on mobile, desktop, and server platforms.</p>
-                      <p>• Java is machine-independent, meaning programs can run on different machines.</p>
-                      <p>• Java is an object-oriented language, allowing code to be organized into reusable components called objects.</p>
-                      <p>• Java requires variables to be declared with a specific data type (e.g., int, double, String) before they can be used.</p>
+                      <h4>1. Introduction to Variables</h4>
+                      <p>• A variable is a placeholder for a value.</p>
+                      <p>• Variables behave as the value they contain.</p>
+                      <p>• Variables allow storing different types of data, including numbers, words, 
+                        sentences, and Boolean values.</p>
 
-                      <h4>2. Java Language Specification</h4>
-                      <p>• The Java Language Specification defines the syntax and semantics of Java.</p>
-                      <p>• Syntax refers to the grammar rules for writing valid Java code.</p>
-                      <p>• Semantics refers to the meaning and behavior of Java code.</p>
-                      <p>• Syntax errors occur when code violates the grammar rules.</p>
-                      <p>• Semantic errors occur when code is grammatically correct but lacks meaning.</p>
-
-                      <h4>3. Application Programming Interfaces (APIs)</h4>
-                      <p>• An API, or library, contains predefined Java code that developers can use.</p>
-                      <p>• APIs provide ready-to-use code, making development faster and easier.</p>
-                      <p>• Developers don't have to write everything from scratch.</p>
-                      <p>• In addition to the core Java APIs, there are many third-party APIs available for various 
-                        purposes, such as graphics, networking, databases, and more.</p>
-                      <p>• Popular third-party APIs include Swing and JavaFX (for GUI development), Apache Commons, and Spring Framework.</p>
-                      <p>• These APIs (Application Programming Interfaces) are pre-built code libraries that allow different software programs to interact and 
-                        share functionality with each other in a standardized way.</p>
-
-                      <h4>4. Editions of Java</h4>
-                      <p>• Java Standard Edition (Java SE): Used for developing desktop applications.</p>
-                      <p>• Java Enterprise Edition (Java EE): Used for developing server-side applications.</p>
-                      <p>• Java Micro Edition (Java ME): Used for developing mobile applications.</p>
-                      <p>• Java SE is the foundation for all other editions.</p>
+                      <h4>2. Primitive vs. Reference Data Types</h4>
+                      <p>• Primitive data types: boolean, byte, short, int, long, float, double, char.</p>
+                      <p id="secondlist">• Store data directly.</p>
+                      <p id="secondlist">• Can hold only one value.</p>
+                      <p id="secondlist">• Uses less memory.</p>
+                      <p id="secondlist">• Faster.</p>
+                      <p>• Reference data types (e.g., String)</p>
+                      <p id="secondlist">• Unlimited (user defined).</p>
+                      <p id="secondlist">• Store an address.</p>
+                      <p id="secondlist">• Can hold multiple values.</p>
+                      <p id="secondlist">• Uses more memory.</p>
+                      <p id="secondlist">• Slower.</p>
                       
-                      <h4>5. Java Development Kit (JDK)</h4>
-                      <p>• The JDK is a set of programs that enable Java development.</p>
-                      <p>• It includes the Java Runtime Environment (JRE) for running Java programs.</p>
-                      <p>• Both JDK and JRE contain the Java Virtual Machine (JVM).</p>
-                      <p>• The Java Virtual Machine (JVM) provides a consistent software environment that runs Java programs, 
-                        abstracting away the differences between various hardware architectures and operating systems.</p>
-                      <p>This allows Java programs to be portable and run on different machines without needing to be recompiled or modified specifically for each platform.</p>
+                      <h4>3. Primitive Data Types</h4>
+                      <p>• boolean: 1 bit, holds true or false:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">boolean isTrue = true;
+boolean isFalse = false;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• byte: 1 byte, holds integers between -128 and 127:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">byte age = 25;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
 
-                      <h4>6. Integrated Development Environment (IDE)</h4>
-                      <p>• An IDE is a program that provides an environment for writing, compiling, building, and running Java programs.</p>
-                      <p>• IDEs typically include tools for debugging and finding errors.</p>
-                      <p>• Popular Java IDEs include NetBeans, Eclipse, IntelliJ IDEA, Android Studio (for Android app development), and Visual Studio Code (Personal Favorite).</p>
+                      <p>• short: 2 bytes, holds integers between -32,768 and 32,767:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">short count = 500;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
 
-                      <h3 id="reviewquest">Review Questions</h3>
-                      <p>1. What is the purpose of the Java Language Specification?</p>
-                      <p>2. Explain the difference between syntax and semantics errors in Java.</p>
-                      <p>3. Why are APIs (libraries) useful in Java development?</p>
-                      <p>4. What are the different editions of Java, and what are their use cases?</p>
-                      <p>5. Describe the roles of JDK, JRE, and JVM in Java development.</p>
-                      <p>6. What are the main features and benefits of using an Integrated Development Environment (IDE)?</p>
+                      <p>• int: 4 bytes, holds integers between -2,147,483,648 and 2,147,483,647:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int population = 1000000;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• long: 8 bytes, holds very large integers (e.g., -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">long distanceToMars = 54600000L; // Note the 'L' suffix</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• float: 4 bytes, holds fractional numbers up to 6-7 decimal digits (must end with 'f'):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">float pi = 3.14159f;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• double: 8 bytes, holds fractional numbers up to 15 decimal digits:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">double gravity = 9.80665;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+
+                      <p>• char: 2 bytes, holds a single character (must be enclosed in single quotes):</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">char letter = 'A';</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>4. Reference Data Type: String</h4>
+                      <p>• Reference data type.</p>
+                      <p>• Stores a sequence of characters (word or sentence).</p>
+                      <p>• Size varies based on the string length.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String name = "John Doe";
+String message = "Hello, World!";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+                      
+                      <h4>5. Declaring, Assigning, and Initializing Variables.</h4>
+                      <p>• Declaration: specifying the data type and variable name (e.g., <span class="pcode">int x;</span>).</p>
+                      <p>• Assignment: assigning a value to a variable (e.g., <span class="pcode">x = 123;</span>).</p>
+                      <p>• Initialization: combining declaration and assignment (e.g., <span class="pcode">int x = 123;</span>).</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int x; // Declaration
+x = 123; // Assignment
+int y = 456; // Initialization</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>6. Naming Conventions and Value Assignment</h4>
+                      <p>• Follow camelCase for variable names (e.g., <span class="pcode">myVariable</span>).</p>
+                      <p>• Use appropriate data types for the values you want to store.</p>
+                      <p>• Enclose string values in double quotes.</p>
+                      <p>• Follow conventions for assigning values (e.g., floats end with 'f', longs end with 'L').</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int age = 25;
+double decimalOne = 22.5;
+double decimalTwo = 44.3;
+long population = 7900000000L;
+String name = "Cottonfields";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>7. Working with Variables</h4>
+                      <p>• Print variable values to the console.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println(age); // Output: 25
+System.out.println(name); // Output: Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• Perform string combination using the + operator.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String greeting = "Hello, " + name; // Output: Hello, Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• Perform string combination using the + operator.</p>
+
+<pre><div class="hljs-wrapper"><code id="code-snippet-1">int sum = age + 10; // sum = 35
+double area = decimalOne * decimalTwo; // product = 996.7</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+
+                      <h3 id="reviewquest">Proceed to Lesson #3</h3>
                       </div>
                     </div>
                   </tbody>

@@ -610,8 +610,7 @@ thead > tr > th {
 }
 
 #reviewquest {
-  margin-top: 33pt;
-  margin-bottom: 33pt;
+  margin-top: 40pt;
 }
 
 #exampleformatting {
@@ -699,6 +698,10 @@ main.table2p1 {
   border-radius: .6rem;
   overflow: auto;
   overflow: overlay;
+}
+
+#secondlist {
+  margin-left: 60px;
 }
 
 /* -------------------- topic-3 ----------------------*/
