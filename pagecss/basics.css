@@ -642,7 +642,7 @@ thead > tr > th {
 
 main.table3 {
   width: 82vw;
-  height: 160rem;
+  height: 233.8rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -654,7 +654,7 @@ main.table3 {
 
 #table__body3{
   width: 98%;
-  height:95.2%;
+  height:96.75%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;

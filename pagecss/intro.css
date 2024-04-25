@@ -409,7 +409,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 195rem;
+  height: 184.5rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -417,6 +417,17 @@ main.table2 {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+#table__body2{
+  width: 98%;
+  height:95.9%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
 }
 
 #table__header2{
@@ -427,17 +438,6 @@ main.table2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#table__body2{
-  width: 98%;
-  height:96.1%;
-  background-color: #171717;
-  font-size: 18px;
-  margin: 1.05rem auto;
-  border-radius: .6rem;
-  overflow: auto;
-  overflow: overlay;
 }
 
 .table__header {
@@ -636,7 +636,7 @@ thead > tr > th {
 
 main.table3 {
   width: 82vw;
-  height: 160rem;
+  height: 145.8rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -648,7 +648,7 @@ main.table3 {
 
 #table__body3{
   width: 98%;
-  height:95.2%;
+  height:94.82%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -671,7 +671,7 @@ main.table3 {
 
 main.table4 {
   width: 82vw;
-  height: 216rem;
+  height: 205.9rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -683,7 +683,7 @@ main.table4 {
 
 #table__body4{
   width: 98%;
-  height:96.5%;
+  height:96.3%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;
@@ -742,6 +742,11 @@ main.tableframe {
   width: 100%;
   height: 98%;
   border-radius: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* -------------------- tasks ----------------------*/
