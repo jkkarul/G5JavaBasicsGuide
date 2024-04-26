@@ -270,8 +270,8 @@ i {
 }
 
 .about-info {
-  width: 30ch;
-  animation: typing 1.5s steps(30), blink .5s step-end infinite alternate;
+  width: 26.5ch;
+  animation: typing 1.5s steps(27), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -410,7 +410,7 @@ main.table {
 
 main.table2 {
   width: 82vw;
-  height: 28rem;
+  height: 154.5rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -418,6 +418,17 @@ main.table2 {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+#table__body2{
+  width: 98%;
+  height:95.08%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
 }
 
 #table__header2{
@@ -428,17 +439,6 @@ main.table2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#table__body2{
-  width: 98%;
-  height:72.8%;
-  background-color: #171717;
-  font-size: 18px;
-  margin: 1.05rem auto;
-  border-radius: .6rem;
-  overflow: auto;
-  overflow: overlay;
 }
 
 .table__header {
@@ -638,6 +638,29 @@ thead > tr > th {
   margin-top: 2pt;
 }
 
+main.table2p2 {
+  width: 82vw;
+  height: 25.5rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#table__body2p2{
+  width: 98%;
+  height:70.2%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
 /* -------------------- topic-2 ----------------------*/
 
 main.table3 {
@@ -679,7 +702,7 @@ main.table3 {
 
 main.table2p1 {
   width: 82vw;
-  height: 30.5rem;
+  height: 44.75rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -691,7 +714,7 @@ main.table2p1 {
 
 #table__body2p1{
   width: 98%;
-  height:74.8%;
+  height:83%;
   background-color: #171717;
   font-size: 18px;
   margin: 1.05rem auto;

@@ -28,8 +28,8 @@
           <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #1">Lesson #1</span></a></li>
           <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #2">Lesson #2</span></a></li>
           <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #3">Lesson #3</span></a></li>
-          <li><a href="print.html"><i class="fa-regular fa-circle-right"></i></i><span data-value="Next">Next</span></a></li>
-          <li><a href="intro.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
+          <li><a href="ifswitch.html"><i class="fa-regular fa-circle-right"></i></i><span data-value="Next">Next</span></a></li>
+          <li><a href="basics.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
         </ul>
       </div>
       
@@ -39,7 +39,7 @@
           <div class="info-wrapper">
             <div id="aboutinfo" class="about-info">
               <p class="site-info-text" data-value="Topic #1: Get Started">
-                Chapter #2: The Java Basics <i class="fa-solid fa-circle-info"></i></i>
+                Chapter #3: Math in Java <i class="fa-solid fa-calculator"></i></i>
               </p>
             </div>
           </div>
@@ -50,43 +50,116 @@
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-               <h1><i class="fa-solid fa-book"></i>#1: Running Java VSCode IDE & The ComLab Way</h1>
+               <h1><i class="fa-solid fa-book"></i>#1: Arithmetic Expressions in Java</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
                   </thead>
                     <div class="iframe-container">
-                     <iframe class="introiframe" src="https://www.youtube.com/embed/zzG0IWjz6yk" title="Running Java Code in Visual Studio Code &amp; ComLab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/m-ZK09m_1GQ" title="Arithmetic Expressions In Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </tbody>
                 </table>
               </section>
             </main>
 
-            <main class="table2" id="tab">
+
+            <main class="table2p2" id="tab2">
               <section class="table__header" id="table__header2">
-                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Copy Code: </h1>
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Code in The Video: </h1>
               </section>
-              <section class="table__body" id="table__body2">
+              <section class="table__body" id="table__body2p2">
                 <table>
                   <thead>
                   </thead>
                       <div class="document-container-copycode">
 
                         <pre>
-                          <div class="hljs-wrapper"><code id="code-snippet-1">public class Main {
+                          <div class="hljs-wrapper"><code id="code-snippet-11">public class Main {
 
     public static void main(String[] args) {
-                            
-        System.out.println("Hello, World!");
-                            
-        int myVariable = 42;
-                            
-        System.out.println("The value of myVariable is: " + myVariable);
+                             
+        expression = operands & operators
+        operands =  values, variables, numbers, quantity
+        operators = + - * / % 
+                           
+    } 
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-11')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
 
-    }
-}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+            
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                        <div class="module-container">
+                          <div class="document-container">
+        
+                            <h3 id="learnobj">Learning Objectives<h3>
+                              <h4>After completing this lesson, you should be able to:</h5>
+                              <p>1. Define expressions and understand their components (operands and operators).</p>
+                              <p>2. Perform basic arithmetic operations using expressions in Java.</p>
+                              <p>3. Increment and decrement variables using the shorthand operators.</p>
+                              <p>4. Understand integer division and its behavior in Java.</p>
+                              <p>5. Use type casting to convert data types in expressions.</p>
+                              <h3 id="lessoncont">Lesson Content</h3>
+        
+                              <h4>1. Introduction to Expressions</h4>
+                              <p>• An expression is a combination of operands and operators.</p>
+                              <p>• Operands are values, variables, numbers, or quantities used in an expression.</p>
+                              <p>• To write programs, we use programming languages.</p>
+                              <p>• Operators are arithmetic symbols (+, -, *, /, %) that perform operations on operands.</p>
+        
+                              <h4>2. Arithmetic Operations with Expressions</h4>
+                              <p>• Addition:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-1">int friends = 10; friends = friends + 1; // Output: 11</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Subtraction:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-2">friends = friends - 1; // Output: 10</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-2')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Multiplication:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-3">friends = friends * 2; // Output: 20</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-3')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Division:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-4">friends = friends / 2; // Output: 5</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-4')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Modulus (remainder of division):</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-5">friends = 10 % 3; // Output: 1</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-5')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+
+</pre>
+        
+                              <h4 id="assemblylang">3. Increment and Decrement Operators</h4>
+                              <p>• Increment operator (<span class="pcode">++</span>) adds 1 to a variable:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-6">friends++; // Output: 11</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-6')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Decrement operator (<span class="pcode">--</span>) subtracts 1 from a variable:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-7">friends--; // Output: 9</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-7')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+        
+                              <h4>4. Integer Division</h4>
+                              <p>• When dividing integers, Java truncates the decimal portion (remainder) of the result.</p>
+                              <p>• Example:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-8">int result = 10 / 3; // Output: 3 (instead of 3.33)</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-8')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• Solution: Use type casting to convert the result to a floating-point data type.</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-9">double result = (double) 10 / 3; // Output: 3.3333333333333335</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-9')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+        
+                              <h4>5. Type Casting in Expressions</h4>
+                              <p>• Type casting is used to convert a value from one data type to another.</p>
+                              <p>• Syntax: <span class="pcode">(TargetDataType) valueToBeConverted</span></p>
+                              <p>• Example:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-10">double friendsDouble = (double) friends; // Convert int to double</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-10')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+                            
+                              <h3 id="reviewquest"><i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #2<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>          
 
                       </div>
                     </div>
@@ -102,14 +175,14 @@
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-              <h1><i class="fa-solid fa-book"></i>#2: Java Variables and Data Types</h1>
+              <h1><i class="fa-solid fa-book"></i>#2: Java Math Class Methods</h1>
               </section>
               <section class="table__body">
                 <table>
                   <thead>
                   </thead>
                     <div class="iframe-container">
-                      <iframe class="introiframe" src="https://www.youtube.com/embed/HejNvH-jd7w" title="Java Variables and Data Types" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe class="introiframe" src="https://www.youtube.com/embed/ZcP3_XrTXEE" title="The Java Math Class" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </tbody>
                 </table>
@@ -127,20 +200,31 @@
                       <div class="document-container-copycode">
 
                         <pre>
-                          <div class="hljs-wrapper"><code id="code-snippet-2">public class Main {
+                          <div class="hljs-wrapper"><code id="code-snippet-12">import java.util.Scanner;
 
-  public static void main(String[] args) {
-
-      int x = 123;
-      double y = 3.14;
-      boolean z = true;
-      char symbol = '@';
-      String name = "Bro";
-
-      System.out.println("Hello " + name);
+    public class Main {
+                            
+        public static void main(String[] args) {
+                              
+        double x;
+        double y;
+        double z;
+                              
+        Scanner scanner = new Scanner(System.in);
+                                
+        System.out.println("Enter side x: ");
+        x = scanner.nextDouble();
+        System.out.println("Enter side y: ");
+        y = scanner.nextDouble();
+                              
+        z = Math.sqrt((x*x)+(y*y));
+                              
+        System.out.println("The hypotenuse is : "+z);
+                              
+        scanner.close();  
 
     }
-}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-2')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-12')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
 
                       </div>
                     </div>
@@ -161,103 +245,75 @@
                       <div class="document-container">
                       <h3 id="learnobj">Learning Objectives</h3>
                       <h4>After completing this lesson, you should be able to:</h4>
-                      <p>1. Define variables and understand their purpose in programming.</p>
-                      <p>2. Differentiate between primitive and reference data types in Java.</p>
-                      <p>3. Identify and describe the eight primitive data types and the String data type.</p>
-                      <p>4. Declare, assign, and initialize variables in Java.</p>
-                      <p>5. Understand the conventions for naming variables and assigning values to different data types.</p>
-                      <p>6. Perform basic operations with variables, such as printing their values and string concatenation.</p>
+                      <p>1. Understand the purpose and usage of the Math class in Java.</p>
+                      <p>2. Utilize various methods of the Math class for common mathematical operations.</p>
+                      <p>3. Implement user input and perform calculations using the Math class methods.</p>
+                      <p>4. Create a program to find the hypotenuse of a triangle using the Math class.</p>
 
                       <h3 id="lessoncont">Lesson Content</h3>
-                      <h4>1. Introduction to Variables</h4>
-                      <p>• A variable is a placeholder for a value.</p>
-                      <p>• Variables behave as the value they contain.</p>
-                      <p>• Variables allow storing different types of data, including numbers, words, 
-                        sentences, and Boolean values.</p>
-
-                      <h4>2. Primitive vs. Reference Data Types</h4>
-                      <p>• Primitive data types: boolean, byte, short, int, long, float, double, char.</p>
-                      <p id="secondlist">• Store data directly.</p>
-                      <p id="secondlist">• Can hold only one value.</p>
-                      <p id="secondlist">• Uses less memory.</p>
-                      <p id="secondlist">• Faster.</p>
-                      <p>• Reference data types (e.g., String)</p>
-                      <p id="secondlist">• Unlimited (user defined).</p>
-                      <p id="secondlist">• Store an address.</p>
-                      <p id="secondlist">• Can hold multiple values.</p>
-                      <p id="secondlist">• Uses more memory.</p>
-                      <p id="secondlist">• Slower.</p>
-                      
-                      <h4>3. Primitive Data Types</h4>
-                      <p>• boolean: 1 bit, holds true or false:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">boolean isTrue = true;
-boolean isFalse = false;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+                      <h4>1. Math Class Methods:</h4>
+                      <p>• Math.max(x, y): Returns the larger of two values.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-13">let a = 5;
+let b = 10;
+let maxValue = Math.max(a, b); // maxValue will be 10</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-13')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
 </pre>
-                      <p>• byte: 1 byte, holds integers between -128 and 127:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">byte age = 25;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+                      <p>• Math.min(x, y): Returns the smaller of two values.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-14">let c = 7;
+let d = 3;
+let minValue = Math.min(c, d); // minValue will be 3</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-14')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
 </pre>
-
-                      <p>• short: 2 bytes, holds integers between -32,768 and 32,767:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">short count = 500;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+                      <p>• Math.abs(x): Returns the absolute value of a number.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-15">let e = -8;
+let absoluteValue = Math.abs(e); // absoluteValue will be 8</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-15')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
 </pre>
-
-                      <p>• int: 4 bytes, holds integers between -2,147,483,648 and 2,147,483,647:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int population = 1000000;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+                      <p>• Math.sqrt(x): Returns the square root of a number.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-16">let f = 16;
+let squareRoot = Math.sqrt(f); // squareRoot will be 4</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-16')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• Math.round(x): Returns the closest integer to the argument.</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-17">let g = 3.14;
+let roundedValue = Math.round(g); // roundedValue will be 3</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-17')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• Math.ceil(x): Returns the smallest (closest to negative infinity) value that is greater than or 
+                        equal to the argument and is equal to a mathematical integer.</p>
+                        <pre><div class="hljs-wrapper"><code id="code-snippet-18">let h = 3.14;
+let ceiledValue = Math.ceil(h); // ceiledValue will be 4</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-18')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• Math.floor(x): Returns the largest (closest to positive infinity) value that is less than or 
+                        equal to the argument and is equal to a mathematical integer.</p>
+                        <pre><div class="hljs-wrapper"><code id="code-snippet-19">let i = 3.14;
+let flooredValue = Math.floor(i); // flooredValue will be 3</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-19')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
 </pre>
 
-                      <p>• long: 8 bytes, holds very large integers (e.g., -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807):</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">long distanceToMars = 54600000L; // Note the 'L' suffix</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
-</pre>
+                      <h4>2. Sample Code Using Math Class - Calculating the Hypotenuse:</h4>
+                      <p>• The hypotenuse of a right-angled triangle is the longest side of the triangle, opposite the right angle.</p>
+                      <p>• The formula to calculate the hypotenuse is: c = sqrt(a^2 + b^2), where a and b are the lengths of the other two sides.</p>
+                      <p>• Sample Code: </p>
 
-                      <p>• float: 4 bytes, holds fractional numbers up to 6-7 decimal digits (must end with 'f'):</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">float pi = 3.14159f;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
-</pre>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-20">import java.util.Scanner; // Import the Scanner class to read user input
 
-                      <p>• double: 8 bytes, holds fractional numbers up to 15 decimal digits:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">double gravity = 9.80665;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
-</pre>
-
-                      <p>• char: 2 bytes, holds a single character (must be enclosed in single quotes):</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">char letter = 'A';</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
-
-                      <h4>4. Reference Data Type: String</h4>
-                      <p>• Reference data type.</p>
-                      <p>• Stores a sequence of characters (word or sentence).</p>
-                      <p>• Size varies based on the string length.</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String name = "John Doe";
-String message = "Hello, World!";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
-                      
-                      <h4>5. Declaring, Assigning, and Initializing Variables.</h4>
-                      <p>• Declaration: specifying the data type and variable name (e.g., <span class="pcode">int x;</span>).</p>
-                      <p>• Assignment: assigning a value to a variable (e.g., <span class="pcode">x = 123;</span>).</p>
-                      <p>• Initialization: combining declaration and assignment (e.g., <span class="pcode">int x = 123;</span>).</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int x; // Declaration
-x = 123; // Assignment
-int y = 456; // Initialization</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
-
-                      <h4>6. Naming Conventions and Value Assignment</h4>
-                      <p>• Follow camelCase for variable names (e.g., <span class="pcode">myVariable</span>).</p>
-                      <p>• Use appropriate data types for the values you want to store.</p>
-                      <p>• Enclose string values in double quotes.</p>
-                      <p>• Follow conventions for assigning values (e.g., floats end with 'f', longs end with 'L').</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int age = 25;
-double decimalOne = 22.5;
-double decimalTwo = 44.3;
-long population = 7900000000L;
-String name = "Cottonfields";</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
-
-                      <h4>7. Working with Variables</h4>
-                      <p>• Print variable values to the console:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">System.out.println(age); // Output: 25
-System.out.println(name); // Output: Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
-</pre>
-                      <p style="margin-top: -7px;">• Perform string combination using the + operator:</p>
-                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String greeting = "Hello, " + name; // Output: Hello, Cottonfields</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
-</pre>
-                      <p style="margin-top: -7px;">• Variables behave as the value they contain and can be used in calculations and operations:</p>
-<pre><div class="hljs-wrapper"><code id="code-snippet-1">int sum = age + 10; // sum = 35
-double area = decimalOne * decimalTwo; // product = 996.7</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
-
+public class HypotenuseCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Create a new Scanner object to read user input
+                        
+        // Prompt the user to enter the length of side x
+        System.out.print("Enter side x: ");
+        double x = scanner.nextDouble(); // Read the user's input for side x
+                        
+        // Prompt the user to enter the length of side y
+        System.out.print("Enter side y: ");
+        double y = scanner.nextDouble(); // Read the user's input for side y
+                        
+        // Calculate the length of the hypotenuse using the Pythagorean theorem
+        double z = Math.sqrt(x * x + y * y);
+                        
+        // Print the calculated value of the hypotenuse
+        System.out.println("The hypotenuse is: " + z);
+                        
+        scanner.close(); // Close the Scanner object to free up system resources
+    }
+}
+// You can copy this and try it aswell :3</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-20')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
 
                       <h3 id="reviewquest"> <i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #3<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>
                       </div>
@@ -274,7 +330,7 @@ double area = decimalOne * decimalTwo; // product = 996.7</code><span class="hlj
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-               <h1><i class="fa-solid fa-book"></i>#3: Accepting User Input in Java</h1>
+               <h1><i class="fa-solid fa-book"></i>#3: Random Values in Java</h1>
               </section>
               <section class="table__body">
                 <table>

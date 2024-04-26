@@ -744,6 +744,29 @@ a {
   color: inherit;
 }
 
+main.table2p2 {
+  width: 82vw;
+  height: 43.5rem;
+  background-color: #0f0f0f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#table__body2p2{
+  width: 98%;
+  height:82.4%;
+  background-color: #171717;
+  font-size: 18px;
+  margin: 1.05rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+
 /* -------------------- topic-4 ----------------------*/
 
 main.tableframe {
