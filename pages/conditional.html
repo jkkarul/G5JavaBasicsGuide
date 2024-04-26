@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>G5RSCH | Java Chapter #4 </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../pagecss/conditional.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    </head>
+
+    <body>
+
+      <!---------------------- sidebar ---------------------->
+      <div id="accordian">
+        <div class="profile" data-href="../index.html">
+          <div class="profile-img bg-img" style="background-image: url(../img/java.png)"></div>
+        </div>
+        <ul class="show-dropdown main-navbar">
+          <div class="selector-active">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <li class="active"><a href="javascript:void(0);"><i class="fa-solid fa-circle-info"></i><span data-value="Chapter:">Chapter:</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #1">Lesson #1</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #2">Lesson #2</span></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-solid fa-book"></i><span data-value="Lesson #3">Lesson #3</span></a></li>
+          <li><a href="math.html"><i class="fa-regular fa-circle-left"></i><span data-value="Back">Back</span></a></li>
+        </ul>
+      </div>
+      
+      <!---------------------- topic-title/site-info ---------------------->
+      <div class="main-content">
+        <div id="info" style="display: none;">
+          <div class="info-wrapper">
+            <div id="aboutinfo" class="about-info">
+              <p class="site-info-text" data-value="Topic #1: Get Started">
+                Chapter #4: Conditional Statements in Java <i class="fa-solid fa-code"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------- topic-1 ---------------------->
+        <div id="topics" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+               <h1><i class="fa-solid fa-book"></i>#1 If Statements in Java</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/Oup8uSjfuk4" title="If Statements in Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+
+            <main class="table2p2" id="tab2">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Code in The Video: </h1>
+              </section>
+              <section class="table__body" id="table__body2p2">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                          <div class="hljs-wrapper"><code id="code-snippet-11">public class Main {
+
+    public static void main(String[] args) {                              
+                          
+        // if statement = performs a block of code if it's condition evaluates to be true                                                         
+        int age = 75;
+                                                                  
+        if(age==75) {       
+            System.out.println("Ok Boomer!"); 
+        }
+                          
+        else if(age>=18) {
+            System.out.println("You are an adult!");
+        }
+                          
+        else if(age>=13) {
+            System.out.println("You are a teenager!");
+        }
+                          
+        else {
+            System.out.println("You are not an adult!");        
+        }   
+    }                       
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-11')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+            
+            <main class="table2" id="tab">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body2">
+                <table>
+                  <thead>
+                  </thead>
+                        <div class="module-container">
+                          <div class="document-container">
+        
+                            <h3 id="learnobj">Learning Objectives<h3>
+                              <h4>After completing this lesson, you should be able to:</h5>
+                              <p>1. Understand the concept of decision-making in programming.</p>
+                              <p>2. Learn how to use if statements in Java.</p>
+                              <p>3. Understand comparison operators and their usage.</p>
+                              <p>4. Explore different types of if statements (if-else, else-if).</p>
+                              <h3 id="lessoncont">Lesson Content</h3>
+        
+                              <h4>1. Introduction to Decision-Making (If Statement)</h4>
+                              <p>• Decision-making is a fundamental part of programming, where programs need to make choices based on certain conditions or inputs.</p>
+                              <p>• TIf statements are used to implement decision-making in programming, allowing the program to execute different 
+                                blocks of code based on whether a condition is true or false.</p>
+
+                              <h4>2. Basic If Statement</h4>
+                              <p>• Syntax of an if statement:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-1">if (condition) {
+  // code block
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p style="margin-top: -7px;">• The condition is a boolean expression that evaluates to either true or false.</p>
+                              <p>• If the condition is true, the code block inside the curly braces is executed.</p>
+                              <p>• If the condition is false, the code block is skipped, and the program continues with the next statement after the if statement.</p>
+                              <p>• Example:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-1">int age = 18;
+    if (age >= 18) {
+    System.out.println("You are an adult.");
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• In this example, if the value of age is greater than or equal to 18, the program will print "You are an adult."</p>
+        
+                              <h4>3. If-Else Statement</h4>
+                              <p>• Syntax of an if-else statement:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-1">if (condition) {
+      // code block 1
+    } else {
+      // code block 2
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>     
+                              <p style="margin-top: -10px;">• If the condition is true, code block 1 is executed.</p>
+                              <p>• If the condition is false, code block 2 is executed.</p>
+                              <p>• Executing one block of code or the other based on the condition.</p>
+                              <p>• Example:</p>  
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-1">int age = 12;
+    if (age >= 18) {
+        System.out.println("You are an adult.");
+    } else {
+        System.out.println("You are not an adult.");
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>       
+                              <p>• In this example, if age is greater than or equal to 18, the 
+                                program will print "You are an adult." Otherwise, it will print "You are not an adult."</p>
+
+                              <h4 id="assemblylang" style="margin-top: 22px;">4. Else-If Statement</h4>
+                              <p>• Syntax of an else-if statement:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-6">if (condition1) {
+      // code block 1
+    } else if (condition2) {
+      // code block 2
+    } else {
+      // code block 3
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-6')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p style="margin-top: -7px;">• The program checks the first condition. If it's true, code block 1 is 
+                                executed, and the rest of the conditions are skipped.</p>
+                              <p>• If the first condition is false, the program checks the second condition. 
+                                If it's true, code block 2 is executed, and the rest of the conditions are skipped.</p>
+                                <p>• If none of the conditions are true, the code block after the else statement is executed.</p>
+                                <p>• Checking multiple conditions before reaching the else block.</p>
+                              <p>• Example:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-7">int age = 16;
+    if (age >= 75) {
+        System.out.println("Okay boomer.");
+    } else if (age >= 18) {
+        System.out.println("You are an adult.");
+    } else if (age >= 13) {
+        System.out.println("You are a teenager.");
+    } else {
+        System.out.println("You are a child.");
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-7')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• In this example, the program checks the age against multiple conditions and prints a different message based on the age range. </p>
+        
+                              <h4>5. Comparison Operators</h4>
+                              <p>• Comparison operators are used to compare values and evaluate conditions in if statements.</p>
+                              <p>• Commonly used comparison operators are: > (greater than), < (less than), >= (greater than or equal to), 
+                                <= (less than or equal to), == (equal to), != (not equal to).</p>
+                                <p>• It's important to use the correct operator for equality comparison (==) instead of the assignment operator (=).</p>
+                              <p>• Example:</p>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-8">int x = 5;
+   int y = 10;
+   if (x == y) {
+       System.out.println("x is equal to y.");
+   } else {
+       System.out.println("x is not equal to y.");
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-8')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                              <p>• In this example, the program checks if x is equal to y using the == operator. Since x is not equal to y, it will print "x is not equal to y."</p>
+        
+                              <h4>6. Sample Code Explained:</h4>
+                              <pre><div class="hljs-wrapper"><code id="code-snippet-10">import java.util.Scanner; // Import the Scanner class
+
+    public class IfStatementExample {
+      
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in); // Create a Scanner object
+                                
+                System.out.print("Enter your age: "); // Prompt the user to enter their age
+                int age = scanner.nextInt(); // Read the user's input and store it in the 'age' variable
+                                
+                // Check if the age is greater than or equal to 75
+                if (age >= 75) {
+                    // Print this message if the age is greater than or equal to 75
+                    System.out.println("Okay boomer."); 
+                }
+                // Check if the age is greater than or equal to 18
+                else if (age >= 18) {
+                    // Print this message if the age is greater than or equal to 18
+                    System.out.println("You are an adult."); 
+                }
+                // Check if the age is greater than or equal to 13
+                else if (age >= 13) {
+                    // Print this message if the age is greater than or equal to 13
+                    System.out.println("You are a teenager."); 
+                }
+                // If none of the above conditions are met
+                else {
+                    // Print this message if the age is less than 13
+                    System.out.println("You are a child."); 
+                }
+                                
+                scanner.close(); // Close the Scanner to prevent resource leaks
+            }
+}
+// You can copy this code and run it :)</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-10')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+                            
+                              <h3 id="reviewquest"><i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #2<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>          
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <!---------------------- topic-2 listen to notes, didnt change classes ---------------------->
+        <div id="tasks" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+              <h1><i class="fa-solid fa-book"></i>#2: Switch Statements in Java</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                      <iframe class="introiframe" src="https://www.youtube.com/embed/PujpUf4YzlY" title="Switch Statements in Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table2p1" id="tab2">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Code in The Video: </h1>
+              </section>
+              <section class="table__body" id="table__body2p1">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                            <div class="hljs-wrapper"><code id="code-snippet-12">public class Main {
+
+    public static void main(String[] args) {
+                               
+          // switch = statement that allows a variable to be tested for equality against a list of values
+                               
+          String day = "Friday";
+                               
+          switch(day) {
+          case "Sunday": System.out.println("It is Sunday!");
+          break;
+          case "Monday": System.out.println("It is Monday!");
+          break;
+          case "Tuesday": System.out.println("It is Tuesday!");
+          break;
+          case "Wednesday": System.out.println("It is Wednesday!");
+          break;
+          case "Thursday": System.out.println("It is Thursday!");
+          break;
+          case "Friday": System.out.println("It is Friday!"); 
+          break;
+          case "Saturday": System.out.println("It is Saturday!");
+          break;
+          default: System.out.println("That is not a day!");
+
+        }
+                                 
+    }
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-12')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+
+            <main class="table3" id="tab">
+              <section class="table__header" id="table__header3">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body3">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <h4>After completing this lesson, you should be able to:</h4>
+                      <p>1. Understand the purpose and use cases of switch statements.</p>
+                      <p>2. Learn the syntax and structure of switch statements.</p>
+                      <p>3. Explore different scenarios for using switch statements.</p>
+                      <p>4. Understand the importance of break statements and the default case.</p>
+
+                      <h3 id="lessoncont">Lesson Content</h3>
+                      <h4>1. Introduction to Switch Statements:</h4>
+                      <p>• A switch statement is a control flow statement that allows a variable or an expression to be evaluated against 
+                        multiple cases. It executes the associated code block for the first matching case.</p>
+                      <p>• Switch statements are often used when there are multiple conditions to check, and 
+                        using a series of if-else statements would make the code less readable and more complex.</p>
+                      
+                      <h4>2. Syntax and Structure</h4>
+                      <p>• Syntax of a switch statement:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">switch (expression) {
+    case value1:
+        // code block
+        break;
+    case value2:
+        // code block
+        break;
+    // ...
+    default:
+        // code block
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>     
+                      <p>• The expression inside the parentheses is evaluated and compared against each case value.</p>
+                      <p>• When a matching case is found, the associated code block is executed.</p>
+                      <p>• The break statement is used to exit the switch statement once a matching case is found and executed.</p>
+                      <p>• The default case is executed if no matching case is found. It is optional but recommended to handle unexpected cases. </p>
+
+                      <h4>3. Example: Days of the Week</h4>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">String day = "Friday";
+    switch (day) {
+        case "Sunday":
+          System.out.println("It is Sunday.");
+          break;
+        case "Monday":
+          System.out.println("It is Monday.");
+          break;
+        // ... (Cases for other days)
+        default:
+          System.out.println(day + " is not a day.");
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>  
+                      <p>• In this example, the switch statement checks the value of the day variable against the cases for each day of the week.</p>
+                      <p>• If day is "Friday", it will print "It is Friday." and exit the switch statement due to the break statement.</p>
+                      <p>• If day does not match any of the cases, the default case will execute, printing "day is not a day." </p>
+
+                      <h4>4. Data Types for Switch Expressions</h4>
+                      <p>• Switch expressions can be of the following data types: byte, short, int, char, and their respective wrapper classes, 
+                        as well as String and enumerated types (enums).</p>
+                      <p>• Example code snippets for different data types:</p>
+                      <p id="secondlist">• Integer: <span class="pcode">int choice = 2; switch (choice) { ... }</span></p>
+                      <p id="secondlist">• Character:<span class="pcode">char grade = 'A'; switch (grade) { ... }</span></p>
+                      <p id="secondlist">• String: <span class="pcode">String color = "red"; switch (color) { ... }</span></p>
+
+                      <h4>5. Sample Code Explained:</h4>
+
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-20">public class Main {
+// This is the main class of the program
+                        
+    public static void main(String[] args) {
+    // This is the main method, where the program execution begins
+                            
+        // switch = statement that allows a variable to be tested for equality against a list of values
+                            
+        String day = "Friday";
+        // Declares a String variable called 'day' and assigns it the value 'Friday'
+                            
+        switch(day) {
+        // The 'switch' statement evaluates the value of the 'day' variable
+                            
+        case "Sunday": System.out.println("It is Sunday!");
+        // If the value of 'day' is 'Sunday', this code block will execute and print 'It is Sunday!'
+        break;
+        // The 'break' statement exits the 'switch' statement once the code block has executed
+                            
+        case "Monday": System.out.println("It is Monday!");
+        break;
+        // If the value of 'day' is 'Monday', this code block will execute and print 'It is Monday!'
+                            
+        case "Tuesday": System.out.println("It is Tuesday!");
+        break;
+        // If the value of 'day' is 'Tuesday', this code block will execute and print 'It is Tuesday!'
+                            
+        case "Wednesday": System.out.println("It is Wednesday!");
+        break;
+        // If the value of 'day' is 'Wednesday', this code block will execute and print 'It is Wednesday!'
+                            
+        case "Thursday": System.out.println("It is Thursday!");
+        break;
+        // If the value of 'day' is 'Thursday', this code block will execute and print 'It is Thursday!'
+                            
+        case "Friday": System.out.println("It is Friday!");
+        break;
+        // If the value of 'day' is 'Friday', this code block will execute and print 'It is Friday!'
+                            
+        case "Saturday": System.out.println("It is Saturday!");
+        break;
+        // If the value of 'day' is 'Saturday', this code block will execute and print 'It is Saturday!'
+                            
+        default: System.out.println("That is not a day!");
+        // If the value of 'day' does not match any of the 'case' statements
+        // This default code block will execute and print 'That is not a day!'
+        }
+    }
+}
+// Copy top right >8)</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-20')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h3 id="reviewquest"> <i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #3<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+          </div>
+        </div>
+         
+        <!---------------------- topic-3 ---------------------->
+        <div id="generator" style="display: none;">
+          <div id="topic-wrapper">
+            <main class="table" id="tab">
+              <section class="table__header">
+               <h1><i class="fa-solid fa-book"></i>#3: Logical Operators in Java</h1>
+              </section>
+              <section class="table__body">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="iframe-container">
+                     <iframe class="introiframe" src="https://www.youtube.com/embed/oEF8AiuJrhw" title="Logical Operators in Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </table>
+              </section>
+            </main>
+
+            <main class="table2p3" id="tab2">
+              <section class="table__header" id="table__header2">
+                <h1><i class="fa-solid fa-copy" style="font-size: 26px;"></i>Code in The Video: </h1>
+              </section>
+              <section class="table__body" id="table__body2p3">
+                <table>
+                  <thead>
+                  </thead>
+                      <div class="document-container-copycode">
+
+                        <pre>
+                          <div class="hljs-wrapper"><code id="code-snippet-11">// ----------------------- Example #1 -------------------------
+
+public class Main {
+  
+    public static void main(String[] args) {
+
+        // logical operators = used to connect two or more expressions
+        // && = (AND) both conditions must be true
+        // || = (OR) either condition must be true
+        // ! = (NOT) reverses boolean value of condition
+                        
+        int temp = 15;
+
+        if(temp>30) {
+          System.out.println("It is hot outside");          
+        }
+                        
+        else if(temp>=20 && temp<=30) {        
+          System.out.println("It is warm outside");      
+        }
+                        
+        else {        
+          System.out.println("It is cold outside");        
+        }
+
+    }
+}
+
+// ----------------------- Example #2 -------------------------
+
+public class Main {
+  
+  public static void main(String[] args) {
+
+      // logical operators = used to connect two or more expressions
+      // && = (AND) both conditions must be true
+      // || = (OR) either condition must be true
+      // ! = (NOT) reverses boolean value of condition
+                      
+      int temp = 15;
+
+      if(temp>30) {
+        System.out.println("It is hot outside");          
+      }
+                      
+      else if(temp>=20 && temp<=30) {        
+        System.out.println("It is warm outside");      
+      }
+                      
+      else {        
+        System.out.println("It is cold outside");        
+      }
+
+  }
+}</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-11')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre> 
+
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+            
+
+            <main class="table4" id="tab">
+              <section class="table__header" id="table__header4">
+                <h1><i class="fa-solid fa-book"></i>Lesson Module: </h1>
+              </section>
+              <section class="table__body" id="table__body4">
+                <table>
+                  <thead>
+                  </thead>
+                    <div class="module-container">
+                      <div class="document-container">
+
+                      <h3 id="learnobj">Learning Objectives</h3>
+                      <p>After completing this lesson, you should be able to:</p>
+                      <p>1. Understand the purpose and use cases of switch statements.</p>
+                      <p>2. Learn the syntax and structure of switch statements.</p>
+                      <p>3. Explore different scenarios for using switch statements.</p>
+                      <p>4. Understand the importance of break statements and the default case.</p>
+                      <h3 id="lessoncont">Lesson Content</h3>
+
+                      <h4>1. Introduction to Switch Statements</h4>
+                      <p>• To use random values in Java, we need to import the <span class="pcode">java.util.Random</span> class. We'll do this at the top of our class, outside of the <span class="pcode">main</span> method: </p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">import java.util.Random;</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>2. Creating a Random Instance</h4>
+                      <p>• Next, we'll create an instance of the Random class within the main method. This will allow us to access the methods for generating random values:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">Random random = new Random();</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• <span class="pcode">System.in</span> represents the standard input stream, which is typically the console or command-line input.</p>
+
+                      <h4>3. Generating Random Integers</h4>
+                      <p>• To generate a random integer, we can use the <span class="pcode">nextInt()</span> method of the Random class. By default, this will generate a random 
+                        integer between <span class="pcode">Integer.MIN_VALUE</span> and <span class="pcode">Integer.MAX_VALUE:</span></p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">int x = random.nextInt();
+System.out.println("Random integer: " + x);</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div>
+</pre>
+                      <p>• If we want to limit the range of the random integer, we can pass an argument to the nextInt() method. For example, to generate a random number 
+                        between 1 and 6 (like rolling a six-sided die), we can do:</p>
+                        <pre><div class="hljs-wrapper"><code id="code-snippet-1">int diceRoll = random.nextInt(6) + 1;
+System.out.println("Random dice roll: " + diceRoll);</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>4. Generating Random Doubles</h4>
+                      <p>• To generate a random double value between 0.0 and 1.0, we can use the <span class="pcode">nextDouble()</span> method:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">double y = random.nextDouble();
+System.out.println("Random double: " + y);</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+                      <h4>5. Generating Random Booleans</h4>
+                      <p>• Finally, to generate a random boolean value (either true or false), we can use the <span class="pcode">nextBoolean()</span> method:</p>
+                      <pre><div class="hljs-wrapper"><code id="code-snippet-1">boolean z = random.nextBoolean();
+System.out.println("Random boolean: " + z);</code><span class="hljs-lang-label copy-button" onclick="copyCodeToClipboard('code-snippet-1')"><i class="fa-regular fa-copy"></i> JAVA</span></div></pre>
+
+
+                        <h3 id="reviewquest" style="margin-bottom: -35px;"><a href="../index.html"><i class="fa-solid fa-computer-mouse" style="margin-right: 12px;"></i>Proceed to Chapter #4 Review (HomePage)<i class="fa-solid fa-computer-mouse" style="margin-left: 12px;"></i></a><br><br>
+                      
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </section>
+              <main class="table" id="tab">
+          </div>
+        </div>
+
+      <!---------------------- topic-4 ---------------------->
+
+      <div id="topic4" style="display: none;">
+        <div id="topic-wrapper">
+          <main class="tableframe" id="tab">
+            <section class="table__header">
+             <h1><i class="fa-solid fa-book"></i>#4 Installing Java/JDK on Your Device</h1>
+            </section>
+            <section class="table__bodyframe">
+              <table>
+                <thead>
+                </thead>
+                  <div class="iframe-containerframe">
+                   <iframe class="introiframe" src="https://www.youtube.com/embed/r-cIq8LeqCo" title="Installing Java/JDK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </tbody>
+              </table>
+            </section>
+          </main>
+
+        <!---------------------- next ---------------------->
+        <div id="runcode" style="display: none;">
+         <div class="runcode-wrapper"></div>
+       </div>
+
+        <!---------------------- back ---------------------->
+        <div id="credits" style="display: none;">
+          <div class="credits-wrapper"></div>
+        </div>
+
+      <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+      <script src="../pagejs/conditional.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>   
+      <script>hljs.highlightAll();</script>
+    </body>
+</html>
