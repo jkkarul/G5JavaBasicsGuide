@@ -656,54 +656,9 @@ thead > tr > th {
 
 .tasks-wrapper {
   display: flex;
-  flex-direction: column;
-  font-size: 1rem;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-#table__body2 p > h2 {
-  margin-bottom: 20pt;
-}
-
-#learnobj {
-  margin-bottom: 33pt;
-}
-
-#lessoncont {
-  margin-top: 33pt;
-  margin-bottom: 33pt;
-}
-
-#reviewquest {
-  margin-top: 33pt;
-  margin-bottom: 33pt;
-}
-
-#exampleformatting {
-  margin-bottom: 15pt;
-}
-
-#complicated {
-  margin-top: -15pt;
-}
-
-#java-add {
-  margin-top: 20pt;
-}
-
-#assemblylang {
-  margin-top: -14pt;
-}
-
-#extrainfo {
-  margin-bottom: 28pt !important;
-}
-
-.pexample {
-  margin-left: 25pt;
-  margin-top: 2pt;
+  flex-direction: column;
 }
 
 /* -------------------- java-compiler ----------------------*/
